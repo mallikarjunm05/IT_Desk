@@ -10,7 +10,7 @@ router.get('/allrequests',getAllRequests);
 
 // router.post('/deleteemployeebyId',deleteLocationById);
 
-// router.post('/updateemp',EditLocationdetails);
+// router.post('/updaterequest');
 
 // router.post('/locationfilter',locationFilter);
 

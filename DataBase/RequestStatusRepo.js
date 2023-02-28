@@ -12,7 +12,7 @@ let dbConnection;
 exports.getAllRequestStatus = async () => {
     try {
         logger.info(`file: ${fname} getAllRequestStatus is called`);
-        let query = `select * from  requeststaus `;
+        let query = `select * from  requeststatus `;
         dbConnection = await DB.ConnectToDb();
         let result = await DB.ExecuteQuery(dbConnection, query);
         console.log(result, "result from table");
@@ -33,7 +33,7 @@ exports.addrequestStatus = async (dbConnection, data, requestid) => {
         logger.info(`file: ${fname} addrequestStatus is called`);
         let result;
         console.log(data, "from api ");
-        const query = `insert into requeststaus(requestid,empid,status,statusdate) values(${requestid},${data.empid},'${data.reqstatus}','${data.createddate}')`;
+        const query = `insert into requeststatus(requestid,empid,status,statusdate) values(${requestid},${data.empid},'${data.reqstatus}','${data.createddate}')`;
         result = await DB.ExecuteQuery(dbConnection, query);
         console.log(result, " from Repo file");
 
