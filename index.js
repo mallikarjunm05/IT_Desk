@@ -4,10 +4,13 @@ const router= express.Router();
 const bodyparser=require('body-parser')
 var logger = require('morgan');
 const cors= require('cors')
-// const EmployeeManager = require('./API/Routes/EmployeeManager');
-// const ReqManager = require('./API/Routes/RequestManager');
+
 const ListDataMasterManager = require('./API/Routes/ListDataMasterManager');
 const ListDataDetailManager = require('./API/Routes/ListDataDetailManager');
+const EmployeeManager = require('./API/Routes/EmployeeManager');
+const LocationManager = require('./API/Routes/LocationManager');
+const RequestManager = require('./API/Routes/RequestManager');
+const RequestStatusManager = require('./API/Routes/RequestStatusManager');
 
 app.use(bodyparser.urlencoded({
 extended:true,
@@ -18,10 +21,13 @@ app.use(cors('*'))
 app.use(logger('dev'));
 app.disable('etag');
 
-// app.use('/EmpManager',EmployeeManager);
-// app.use('/ReqManager',ReqManager);
+
 app.use('/ListDataMaster',ListDataMasterManager);
 app.use('/ListDataDetail',ListDataDetailManager);
+app.use('/EmpManager',EmployeeManager);
+app.use('/LocationManager',LocationManager);
+app.use('/RequestManager',RequestManager);
+app.use('/RequestStatusManager',RequestStatusManager);
 
 app.listen(3000
     ,()=>{

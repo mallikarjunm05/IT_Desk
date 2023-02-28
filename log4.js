@@ -9,6 +9,8 @@ configure({
       base: "logs/",
       property: "categoryName",
       extension: ".log",
+      maxLogSize: 10485760,
+      backups: 3,
       compress: true,
     },
   },
