@@ -9,3 +9,182 @@
 [2023-02-28T10:24:03.211] [INFO] app - file: RequestStatusService.js getAllRequest is called
 [2023-02-28T10:24:03.211] [INFO] app - file: RequestStatusRepo.js getAllRequestStatus is called
 [2023-02-28T10:24:03.376] [INFO] app - file: RequestStatusController.js , statuscode : 200
+[2023-02-28T15:25:48.121] [INFO] app - file: RequestController.js createRequest is called
+[2023-02-28T15:25:48.131] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-02-28T15:25:48.238] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-02-28T15:25:48.338] [FATAL] app - file: RequestRepo.js,error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`itdesk`.`requestdetails`, CONSTRAINT `empid` FOREIGN KEY (`empid`) REFERENCES `empdetails` (`empid`))
+[2023-02-28T15:25:48.346] [FATAL] app - file: RequestStatusService.js,error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`itdesk`.`requestdetails`, CONSTRAINT `empid` FOREIGN KEY (`empid`) REFERENCES `empdetails` (`empid`))
+[2023-02-28T15:25:48.347] [FATAL] app - file: RequestController.js,error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`itdesk`.`requestdetails`, CONSTRAINT `empid` FOREIGN KEY (`empid`) REFERENCES `empdetails` (`empid`))
+[2023-02-28T15:26:12.657] [INFO] app - file: EmployeeController.js getEmployees is called
+[2023-02-28T15:26:12.657] [INFO] app - file: EmployeeServices.js getEmployess is called
+[2023-02-28T15:26:12.658] [INFO] app - file: EmployeeRepo.js getEmployeesRepo is called
+[2023-02-28T15:28:18.410] [INFO] app - file: RequestController.js createRequest is called
+[2023-02-28T15:28:18.410] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-02-28T15:28:18.598] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-02-28T15:28:18.724] [FATAL] app - file: RequestRepo.js,error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`itdesk`.`requestdetails`, CONSTRAINT `empid` FOREIGN KEY (`empid`) REFERENCES `empdetails` (`empid`))
+[2023-02-28T15:28:18.736] [FATAL] app - file: RequestStatusService.js,error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`itdesk`.`requestdetails`, CONSTRAINT `empid` FOREIGN KEY (`empid`) REFERENCES `empdetails` (`empid`))
+[2023-02-28T15:28:18.736] [FATAL] app - file: RequestController.js,error: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`itdesk`.`requestdetails`, CONSTRAINT `empid` FOREIGN KEY (`empid`) REFERENCES `empdetails` (`empid`))
+[2023-02-28T15:28:50.214] [INFO] app - file: RequestController.js createRequest is called
+[2023-02-28T15:28:50.214] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-02-28T15:28:50.295] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-02-28T15:28:50.494] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-02-28T15:28:50.611] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-02-28T16:45:44.812] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-02-28T16:45:44.822] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-02-28T16:45:44.823] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-02-28T16:47:23.452] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-02-28T16:47:23.458] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-02-28T16:47:23.458] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-02-28T16:47:23.612] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-02-28T17:13:46.858] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-02-28T17:13:46.874] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-02-28T17:13:46.874] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-02-28T17:13:47.174] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-02-28T17:48:41.039] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-02-28T17:48:41.051] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-02-28T17:48:41.052] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-02-28T17:48:42.095] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-02-28T18:32:36.083] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-02-28T18:32:36.092] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-02-28T18:32:36.092] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-02-28T18:32:45.319] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-02-28T18:33:14.873] [INFO] app - file: RequestController.js createRequest is called
+[2023-02-28T18:33:14.873] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-02-28T18:33:14.941] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-02-28T18:33:15.048] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-03-2023' for column 'scheduleddate' at row 1
+[2023-02-28T18:33:15.060] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-03-2023' for column 'scheduleddate' at row 1
+[2023-02-28T18:33:15.061] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-03-2023' for column 'scheduleddate' at row 1
+[2023-03-01T10:01:49.993] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:01:50.004] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:01:50.154] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:01:50.429] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T10:01:50.648] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T10:03:24.846] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:03:24.846] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:03:25.019] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:03:25.249] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T10:03:26.145] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T10:13:32.949] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:13:32.957] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:13:33.033] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:13:33.043] [FATAL] app - file: RequestRepo.js,error: ReferenceError: date_format is not defined
+[2023-03-01T10:13:33.046] [FATAL] app - file: RequestStatusService.js,error: ReferenceError: date_format is not defined
+[2023-03-01T10:13:33.046] [FATAL] app - file: RequestController.js,error: ReferenceError: date_format is not defined
+[2023-03-01T10:28:11.150] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:28:11.165] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:28:11.444] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:28:11.679] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:28:11.701] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:28:11.701] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:28:57.644] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:28:57.651] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:28:58.156] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:28:58.300] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:28:58.313] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:28:58.314] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:31:51.446] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:31:51.455] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:31:51.526] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:31:51.627] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:31:51.637] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:31:51.638] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:32:48.879] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:32:48.889] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:32:48.956] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:32:49.084] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:32:49.094] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:32:49.094] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-032023' for column 'createddate' at row 1
+[2023-03-01T10:33:32.560] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:33:32.560] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:33:32.640] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:33:32.748] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-03-2023' for column 'createddate' at row 1
+[2023-03-01T10:33:32.757] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-03-2023' for column 'createddate' at row 1
+[2023-03-01T10:33:32.757] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '01-03-2023' for column 'createddate' at row 1
+[2023-03-01T10:34:45.223] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:34:45.231] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:34:45.323] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:34:45.454] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '2023-0-3' for column 'createddate' at row 1
+[2023-03-01T10:34:45.466] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '2023-0-3' for column 'createddate' at row 1
+[2023-03-01T10:34:45.466] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '2023-0-3' for column 'createddate' at row 1
+[2023-03-01T10:42:22.302] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:42:22.310] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:42:22.410] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:42:22.517] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '03-01-2023' for column 'createddate' at row 1
+[2023-03-01T10:42:22.525] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '03-01-2023' for column 'createddate' at row 1
+[2023-03-01T10:42:22.525] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '03-01-2023' for column 'createddate' at row 1
+[2023-03-01T10:43:29.764] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:43:29.765] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:43:29.836] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:43:29.944] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'aN-aN-NaN' for column 'createddate' at row 1
+[2023-03-01T10:43:29.953] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'aN-aN-NaN' for column 'createddate' at row 1
+[2023-03-01T10:43:29.953] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'aN-aN-NaN' for column 'createddate' at row 1
+[2023-03-01T10:43:45.300] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:43:45.300] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:43:45.385] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:43:45.496] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '11-02-2023' for column 'createddate' at row 1
+[2023-03-01T10:43:45.504] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '11-02-2023' for column 'createddate' at row 1
+[2023-03-01T10:43:45.504] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '11-02-2023' for column 'createddate' at row 1
+[2023-03-01T10:46:42.097] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:46:42.105] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:46:42.175] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:46:42.285] [FATAL] app - file: RequestRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '[object Promise]' for column 'createddate' at row 1
+[2023-03-01T10:46:42.294] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '[object Promise]' for column 'createddate' at row 1
+[2023-03-01T10:46:42.294] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '[object Promise]' for column 'createddate' at row 1
+[2023-03-01T10:47:48.311] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:47:48.319] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:47:48.384] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:47:48.505] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T10:47:48.976] [FATAL] app - file: RequestStatusRepo.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '02-11-2023' for column 'statusdate' at row 1
+[2023-03-01T10:47:48.990] [FATAL] app - file: RequestStatusService.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '02-11-2023' for column 'statusdate' at row 1
+[2023-03-01T10:47:48.990] [FATAL] app - file: RequestController.js,error: Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '02-11-2023' for column 'statusdate' at row 1
+[2023-03-01T10:50:53.642] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T10:50:53.650] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T10:50:53.713] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T10:50:53.858] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T10:50:54.009] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T11:40:47.168] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T11:40:47.178] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T11:40:47.249] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T11:40:47.372] [FATAL] app - file: RequestStatusService.js,error: ReferenceError: totalresult is not defined
+[2023-03-01T11:40:47.373] [FATAL] app - file: RequestController.js,error: ReferenceError: totalresult is not defined
+[2023-03-01T11:41:47.374] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T11:41:47.384] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T11:41:47.459] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T11:41:47.593] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T11:42:30.556] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T11:42:30.566] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T11:42:30.640] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T11:42:30.836] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T11:43:57.320] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T11:43:57.329] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T11:43:57.398] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T11:43:57.523] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T11:43:57.686] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T12:01:56.267] [INFO] app - file: EmployeeController.js getEmployees is called
+[2023-03-01T12:01:56.278] [INFO] app - file: EmployeeServices.js getEmployess is called
+[2023-03-01T12:01:56.278] [INFO] app - file: EmployeeRepo.js getEmployeesRepo is called
+[2023-03-01T12:04:34.204] [INFO] app - file: EmployeeController.js EditEmployeedetails is called
+[2023-03-01T12:04:34.204] [INFO] app - file: EmployeeServices.js EditEmployeedetails is called
+[2023-03-01T12:04:34.204] [INFO] app - file: EmployeeRepo.js EditEmployeedetails is called
+[2023-03-01T12:08:25.392] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-01T12:08:25.401] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-01T12:08:25.402] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-01T12:08:25.783] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T12:17:56.258] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-01T12:17:56.266] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T12:17:56.578] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-01T12:17:56.688] [FATAL] app - file: RequestStatusService.js,error: ReferenceError: err is not defined
+[2023-03-01T12:17:56.689] [FATAL] app - file: RequestController.js,error: ReferenceError: err is not defined
+[2023-03-01T12:21:59.533] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-01T12:21:59.542] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T12:21:59.833] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-01T12:21:59.952] [FATAL] app - file: RequestStatusService.js,error: ReferenceError: err is not defined
+[2023-03-01T12:21:59.953] [FATAL] app - file: RequestController.js,error: ReferenceError: err is not defined
+[2023-03-01T12:28:30.607] [INFO] app - file: EmployeeController.js EditEmployeedetails is called
+[2023-03-01T12:28:30.615] [INFO] app - file: EmployeeServices.js EditEmployeedetails is called
+[2023-03-01T12:28:30.615] [INFO] app - file: EmployeeRepo.js EditEmployeedetails is called
+[2023-03-01T12:30:09.913] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-01T12:30:09.914] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T12:30:10.228] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-01T12:30:10.373] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T12:30:10.550] [INFO] app - file: RequestController.js , statuscode : 200

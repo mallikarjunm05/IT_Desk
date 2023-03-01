@@ -40,3 +40,22 @@ exports.getAllRequests = async() => {
     }
 }
 
+
+exports.updateRequest = async(data) => {
+    try {
+        logger.info(`file: ${fname} updateRequest is called`);
+        dbConnection = await DB.ConnectToDb();
+
+        const result = await RequestRepo.updateRequest(data,dbConnection);
+        console.log(result, "from service file");
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+    finally{
+        dbConnection.release();
+    }
+}

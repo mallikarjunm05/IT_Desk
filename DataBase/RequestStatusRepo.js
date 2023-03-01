@@ -1,5 +1,5 @@
 const { fileNanme, logger } = require('../log4');
-const DB = require('../DataBase/db')
+const DB = require('../DataBase/db');
 
 var fname;
 
@@ -8,6 +8,12 @@ fileNanme(__filename).then((data) => {
 });
 let dbConnection;
 
+async function dateformat(date){
+    
+    let d = new Date(date);
+    let newdate = d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" +("0" + d.getDate()).slice(-2) ;
+    return newdate;
+}
 
 exports.getAllRequestStatus = async () => {
     try {
@@ -19,7 +25,7 @@ exports.getAllRequestStatus = async () => {
         return result;
     }
     catch (err) {
-        console.log(err);
+        console.log(err,"from getAllRequestStatus");
         logger.fatal(`file: ${fname},error: ${err}`);
         throw err;
     }
@@ -33,16 +39,34 @@ exports.addrequestStatus = async (dbConnection, data, requestid) => {
         logger.info(`file: ${fname} addrequestStatus is called`);
         let result;
         console.log(data, "from api ");
-        const query = `insert into requeststatus(requestid,empid,status,statusdate) values(${requestid},${data.empid},'${data.reqstatus}','${data.createddate}')`;
+        let statusdate = await dateformat(data.createddate);
+        const query = `insert into requeststatus(requestid,empid,status,statusdate) values(${requestid},${data.empid},'${data.reqstatus}','${statusdate}')`;
         result = await DB.ExecuteQuery(dbConnection, query);
         console.log(result, " from Repo file");
 
         return result;
     }
     catch (err) {
-        console.log(err);
+        console.log(err, "from addrequestStatus");
         logger.fatal(`file: ${fname},error: ${err}`);
         throw err;
     }
 }
 
+exports.editrequestStatus = async (dbConnection, data) => {
+    try {
+        logger.info(`file: ${fname} editrequestStatus is called`);
+        let result;
+        console.log(data, "from api ");
+        const query = `update requeststatus set requestid = ${data.requestid},empid = ${data.empid},status='${data.reqstatus}',statusdate='${data.createddate}' where statusid = ${data.statusid}`;
+        result = await DB.ExecuteQuery(dbConnection, query);
+        console.log(result, " from Request status Repo file");
+
+        return result;
+    }
+    catch (err) {
+        console.log(err, "from editrequestStatus");
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err;
+    }
+}

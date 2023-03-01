@@ -1,6 +1,7 @@
 var express = require("express");
+const { updateRequest } = require("../../DataBase/RequestRepo");
 var router = express.Router();
-const { createRequest , getAllRequests} = require('../Controllers/RequestController');
+const { createRequest , getAllRequests, UpdateRequest} = require('../Controllers/RequestController');
 
 router.post('/createrequest',createRequest);
 
@@ -10,7 +11,7 @@ router.get('/allrequests',getAllRequests);
 
 // router.post('/deleteemployeebyId',deleteLocationById);
 
-// router.post('/updaterequest');
+router.post('/updaterequest',UpdateRequest);
 
 // router.post('/locationfilter',locationFilter);
 

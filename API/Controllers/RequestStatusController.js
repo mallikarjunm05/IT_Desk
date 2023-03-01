@@ -18,7 +18,7 @@ const getAllRequestStatus = async (req, res) => {
             Status: {
                 StatusCode: 200,
                 StatusType: "Success",
-                StatusMessage: "Change Request Created Succesfully!!",
+                StatusMessage: "Records found Succesfully!!",
                 StatusSeverity: "Information",
             },
             result: result
@@ -28,8 +28,32 @@ const getAllRequestStatus = async (req, res) => {
     catch (err) {
         logger.fatal(`file: ${fname},error: ${err}`);
         console.log(err, "from getallrequeststatus");
-        res.status(500).json({ error:err });
+        res.status(500).json({ error: err });
     }
 }
 
-module.exports = { getAllRequestStatus };
+const editrequestStatus = async (req, res) => {
+    try {
+        logger.info(`file: ${fname} editrequestStatus  is called`);
+        const result = await RequestStatusServices.editrequestStatus(req.body);
+        logger.info(`file: ${fname} , statuscode : 200`)
+        res.status(200).json({
+            Status: {
+                StatusCode: 200,
+                StatusType: "Success",
+                StatusMessage: "Record Updated Succesfully!!",
+                StatusSeverity: "Information",
+            },
+            result: result
+        });
+
+    }
+    catch (err) {
+        logger.fatal(`file: ${fname},error: ${err}`);
+        console.log(err, "from editrequestStatus ");
+        res.status(500).json({ error: err });
+    }
+}
+
+
+module.exports = { getAllRequestStatus, editrequestStatus };

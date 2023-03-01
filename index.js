@@ -11,6 +11,7 @@ const EmployeeManager = require('./API/Routes/EmployeeManager');
 const LocationManager = require('./API/Routes/LocationManager');
 const RequestManager = require('./API/Routes/RequestManager');
 const RequestStatusManager = require('./API/Routes/RequestStatusManager');
+const ResultPerPageManager = require('./API/Routes/requestPagination');
 
 app.use(bodyparser.urlencoded({
 extended:true,
@@ -28,7 +29,7 @@ app.use('/EmpManager',EmployeeManager);
 app.use('/LocationManager',LocationManager);
 app.use('/RequestManager',RequestManager);
 app.use('/RequestStatusManager',RequestStatusManager);
-
+app.use('/RequestPaginationManager',ResultPerPageManager);
 app.listen(3000
     ,()=>{
     console.log("listening on 3000")
