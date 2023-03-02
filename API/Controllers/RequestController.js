@@ -124,4 +124,50 @@ const UpdateRequest = async (req, res) => {
 }
 
 
-module.exports = { createRequest, getAllRequests , UpdateRequest};
+const getfilteredRequests = async (req, res) => {
+    try {
+        logger.info(`file: ${fname} getfilteredRequests is called`);
+        const result = await RequestServices.getfilteredRequests(req);
+        logger.info(`file: ${fname} , statuscode : 200`)
+        res.status(200).json({
+            Status: {
+                StatusCode: 200,
+                StatusType: "Success",
+                StatusMessage: "request details found Succesfully!!",
+                StatusSeverity: "Information",
+            },
+            result: result
+        });
+
+    }
+    catch (err) {
+        logger.fatal(`file: ${fname},error: ${err}`);
+        console.log(err,"from get filtered requests")
+        res.status(500).json({ error:err });
+    }
+}
+
+const getRequestbyId = async (req, res) => {
+    try {
+        logger.info(`file: ${fname} getRequestbyId is called`);
+        const result = await RequestServices.getRequestbyId(req.body);
+        logger.info(`file: ${fname} , statuscode : 200`)
+        res.status(200).json({
+            Status: {
+                StatusCode: 200,
+                StatusType: "Success",
+                StatusMessage: "request detail found Succesfully!!",
+                StatusSeverity: "Information",
+            },
+            result: result
+        });
+
+    }
+    catch (err) {
+        logger.fatal(`file: ${fname},error: ${err}`);
+        console.log(err,"from get  request by id")
+        res.status(500).json({ error:err });
+    }
+}
+
+module.exports = { createRequest, getAllRequests , UpdateRequest, getfilteredRequests,getRequestbyId};

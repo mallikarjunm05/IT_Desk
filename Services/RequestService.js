@@ -59,3 +59,30 @@ exports.updateRequest = async(data) => {
         dbConnection.release();
     }
 }
+
+
+exports.getfilteredRequests = async(data) => {
+    try {
+        logger.info(`file: ${fname} getfilteredRequest is called`);
+        const result = await RequestRepo.requestdetailsFilter(data);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+}
+
+exports.getRequestbyId = async(data) => {
+    try {
+        logger.info(`file: ${fname} getRequestbyId is called`);
+        const result = await RequestRepo.getRequestbyId(data);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+}

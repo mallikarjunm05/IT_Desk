@@ -13,12 +13,17 @@ const RequestManager = require('./API/Routes/RequestManager');
 const RequestStatusManager = require('./API/Routes/RequestStatusManager');
 const ResultPerPageManager = require('./API/Routes/requestPagination');
 
+
+app.use(cors(
+    origin="*"
+  ))
 app.use(bodyparser.urlencoded({
 extended:true,
 }))
 app.use(bodyparser.json())
 app.use(express.json())
-app.use(cors('*'))
+// app.use(cors('*'))
+
 app.use(logger('dev'));
 app.disable('etag');
 

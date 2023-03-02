@@ -188,3 +188,522 @@
 [2023-03-01T12:30:10.228] [INFO] app - file: RequestRepo.js updateRequest is called
 [2023-03-01T12:30:10.373] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
 [2023-03-01T12:30:10.550] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T17:15:25.919] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:15:25.941] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:15:25.944] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:15:25.946] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:53:00.181] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:53:00.201] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:53:00.204] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T17:53:00.208] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:37.590] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:37.626] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:37.629] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:37.635] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:37.681] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:37.879] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:37.893] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:37.899] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:45.687] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:45.691] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:45.698] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:45.705] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:32:45.750] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:45.771] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:45.820] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:32:45.821] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:09.190] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:09.195] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:09.198] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:09.202] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:09.263] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:09.281] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:09.331] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:09.333] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:35.894] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:35.897] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:35.900] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:35.909] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:35.969] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:36.034] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:36.034] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:36.035] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:48.520] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:48.523] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:48.525] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:48.527] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:33:48.586] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:48.601] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:48.653] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:33:48.654] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:34:41.168] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T18:34:41.169] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T18:34:41.247] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T18:34:41.362] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T18:34:41.465] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-01T18:52:30.157] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:52:30.159] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:52:30.160] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:52:30.162] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-01T18:52:30.233] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:52:30.234] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:52:30.235] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:52:30.294] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-01T18:52:53.330] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-01T18:52:53.330] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-01T18:52:53.402] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-01T18:52:53.520] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-01T18:52:53.637] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T09:17:12.215] [INFO] app - file: RequestStatusController.js getAllRequestStatus is called
+[2023-03-02T09:17:12.224] [INFO] app - file: RequestStatusService.js getAllRequest is called
+[2023-03-02T09:17:12.225] [INFO] app - file: RequestStatusRepo.js getAllRequestStatus is called
+[2023-03-02T09:17:12.450] [INFO] app - file: RequestStatusController.js , statuscode : 200
+[2023-03-02T09:17:26.208] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-02T09:17:26.209] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-02T09:17:26.209] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-02T09:17:26.776] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T09:18:35.089] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-02T09:18:35.098] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-02T09:18:35.098] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-02T09:18:35.445] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T09:48:40.204] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-02T09:48:40.214] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-02T09:48:40.215] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-02T09:48:40.649] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T09:48:50.056] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-02T09:48:50.057] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-02T09:48:50.057] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-02T09:48:50.390] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:28:35.631] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:28:35.641] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:28:35.725] [FATAL] app - file: 'RequestRepo.js',error: TypeError: Cannot read properties of undefined (reading 'body')
+[2023-03-02T11:28:35.725] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:29:19.689] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:29:19.699] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:29:19.887] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+[2023-03-02T11:29:19.887] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:32:09.285] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:32:09.293] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:32:09.473] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T11:32:09.474] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:35:18.155] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:35:18.165] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:35:18.406] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T11:35:18.406] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:57:41.745] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:57:41.753] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:57:41.947] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T11:57:41.947] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:58:40.117] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:58:40.126] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:58:40.332] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T11:58:40.333] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T11:59:06.636] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T11:59:06.645] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T11:59:06.822] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T11:59:06.823] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:00:25.042] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:00:25.051] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:00:25.132] [FATAL] app - file: 'RequestRepo.js',error: TypeError: Cannot read properties of undefined (reading 'length')
+[2023-03-02T12:00:25.132] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:01:43.634] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:01:43.643] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:01:43.821] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:01:43.821] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:09:52.923] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-02T12:09:52.923] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-02T12:09:52.924] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-02T12:09:53.454] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:10:11.582] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:10:11.582] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:10:11.770] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:10:11.771] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:11:36.875] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:11:36.883] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:11:37.065] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:11:37.066] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:13:05.763] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:13:05.771] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:13:06.085] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:13:06.086] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:15:56.494] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:15:56.502] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:16:08.327] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:16:08.327] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:16:08.485] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:16:08.486] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:16:11.340] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:16:11.340] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:16:11.497] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:16:11.499] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:16:19.681] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:16:19.681] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:16:19.837] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:16:19.837] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:19:51.645] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:19:51.653] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:19:51.857] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:19:51.858] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:22:28.229] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:22:28.237] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:22:28.490] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:23:06.816] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:23:06.816] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:23:07.088] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:23:26.719] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:23:26.719] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:23:26.957] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:23:59.245] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:23:59.245] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:23:59.509] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:25:40.097] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:25:40.106] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:25:40.416] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_BAD_FIELD_ERROR: Unknown column 'date' in 'where clause'
+[2023-03-02T12:25:40.417] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:26:39.235] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:26:39.244] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:26:39.518] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:26:54.253] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:26:54.260] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:26:54.470] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '|| createddate = '2023-03-02'   AND reqstatus like 'draft%'' at line 1
+[2023-03-02T12:26:54.470] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:27:22.533] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:27:22.542] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:27:22.861] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:27:47.278] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:27:47.279] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:27:47.527] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:28:33.224] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:28:33.224] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:28:33.401] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:29:21.297] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:29:21.298] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:29:47.271] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:29:47.279] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:29:50.617] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:29:50.617] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:29:50.878] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:30:38.988] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:30:38.996] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:30:39.276] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:30:57.603] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:30:57.612] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:30:57.803] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:30:57.804] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:31:39.448] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:31:39.456] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:31:39.664] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:31:39.664] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:32:44.351] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:32:44.360] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:32:44.571] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:32:44.572] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:34:31.553] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:34:31.561] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:34:31.750] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:34:31.751] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:34:57.221] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:34:57.230] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:34:57.551] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:36:49.303] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:36:49.312] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:36:49.631] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:36:49.632] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:37:00.215] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:37:00.215] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:37:00.383] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:37:00.384] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:37:07.120] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:37:07.120] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:37:07.380] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:37:51.277] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:37:51.277] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:37:51.505] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:38:22.660] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:38:22.660] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:38:22.835] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND reqstatus like 'draft%' AND status like 'open%' AND' at line 1
+[2023-03-02T12:38:22.836] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:39:01.428] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:39:01.436] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:39:01.629] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND reqstatus like 'draft%' AND status like 'open%' AND' at line 1
+[2023-03-02T12:39:01.629] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:39:10.510] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:39:10.511] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:39:10.693] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND reqstatus like 'draft%' AND' at line 1
+[2023-03-02T12:39:10.693] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:39:57.082] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:39:57.092] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:39:57.303] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND reqstatus like 'draft%' AND' at line 1
+[2023-03-02T12:39:57.304] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:40:59.246] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:40:59.254] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:40:59.519] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:41:26.959] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:41:26.959] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:41:27.193] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:41:59.874] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:41:59.874] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:42:00.071] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:42:00.071] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:42:04.968] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:42:04.968] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:42:05.139] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:42:05.139] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:42:29.651] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:42:29.661] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:42:29.846] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:42:29.847] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:42:43.978] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:42:43.979] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:42:44.222] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:43:05.021] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:43:05.030] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:43:05.278] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:43:14.198] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:43:14.198] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:43:14.592] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:43:14.592] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:43:47.352] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T12:43:47.353] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T12:43:47.878] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T12:45:13.290] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:45:13.299] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:45:30.444] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:45:30.444] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:45:40.720] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:45:40.720] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:45:40.909] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:45:40.910] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:45:56.614] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:45:56.622] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:45:56.798] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:45:56.800] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:45:59.207] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:45:59.208] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:45:59.387] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:45:59.388] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:47:29.195] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:47:29.203] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:47:29.384] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:47:29.384] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:47:31.053] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:47:31.053] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:47:31.209] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:47:31.209] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:47:34.127] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:47:34.127] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:47:34.289] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:47:34.290] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:47:52.505] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:47:52.513] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:48:13.664] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:48:13.664] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:48:52.606] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:48:52.616] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:49:25.836] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:49:25.844] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:50:48.851] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:50:48.851] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:51:26.667] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:51:26.679] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:51:42.383] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:51:42.383] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:51:52.904] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:51:52.904] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:51:53.066] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:51:53.066] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:51:58.459] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:51:58.460] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:52:01.208] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T12:52:01.209] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:55:19.953] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:55:19.960] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:55:31.301] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:55:31.301] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:55:31.462] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 0' at line 1
+[2023-03-02T12:55:31.463] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:55:33.958] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:55:33.958] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T12:55:34.122] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 0' at line 1
+[2023-03-02T12:55:34.123] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T12:56:22.567] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T12:56:22.576] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:06:59.163] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:06:59.171] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:07:12.337] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:07:12.337] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:07:55.924] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:07:55.932] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:08:14.998] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:08:14.998] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:08:24.814] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:08:24.814] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:08:32.189] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:08:32.189] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:08:39.739] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:08:39.739] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:08:54.177] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:08:54.177] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:08:54.368] [FATAL] app - file: 'EmployeeRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T13:08:54.368] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-02T13:09:53.110] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:09:53.110] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:10:00.289] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-02T13:10:00.289] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-02T13:11:53.254] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:11:53.263] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:11:53.491] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:12:30.604] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:12:30.604] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:12:30.927] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:13:25.122] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:13:25.130] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:13:25.452] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_WRONG_VALUE: Incorrect DATE value: 'NaN-aN-aN'
+[2023-03-02T13:13:25.453] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:14:23.963] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:14:23.970] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:14:24.236] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:14:32.418] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:14:32.418] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:14:32.620] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:15:52.609] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:15:52.617] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:15:52.791] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:16:32.180] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:16:32.189] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:16:32.272] [FATAL] app - file: 'RequestRepo.js',error: ReferenceError: Cannot access 'nextdate' before initialization
+[2023-03-02T13:16:32.273] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:17:14.037] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:17:14.046] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:17:14.286] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:17:35.422] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:17:35.431] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:17:35.523] [FATAL] app - file: 'RequestRepo.js',error: ReferenceError: Cannot access 'nextdate' before initialization
+[2023-03-02T13:17:35.523] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:19:26.105] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:19:26.115] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:19:26.200] [FATAL] app - file: 'RequestRepo.js',error: ReferenceError: Cannot access 'nextdate' before initialization
+[2023-03-02T13:19:26.201] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:19:51.529] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:19:51.537] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:19:51.634] [FATAL] app - file: 'RequestRepo.js',error: ReferenceError: nextdate is not defined
+[2023-03-02T13:19:51.635] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:20:18.633] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:20:18.641] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:20:19.059] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:21:10.004] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:21:10.014] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:21:10.232] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:22:41.988] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:22:41.996] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:22:42.253] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:23:23.039] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:23:23.048] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:23:23.218] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:23:42.981] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:23:42.992] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:23:43.174] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:24:44.430] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:24:44.438] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:24:44.590] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:24:55.854] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:24:55.855] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:24:56.009] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:25:15.813] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:25:15.821] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:25:16.048] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:26:05.901] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:26:05.909] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:26:06.131] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:26:27.336] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:26:27.345] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:26:27.544] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:27:14.927] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:27:14.927] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:27:15.234] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:28:05.431] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:28:05.440] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:28:05.721] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:28:26.392] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:28:26.402] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:28:26.599] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:30:32.581] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:30:32.589] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:30:32.668] [FATAL] app - file: 'RequestRepo.js',error: TypeError: d.getFullYear is not a function
+[2023-03-02T13:30:32.669] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:31:06.761] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:31:06.769] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:31:06.996] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:31:49.755] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:31:49.763] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:31:49.925] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:32:20.144] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:32:20.154] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:32:20.323] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:33:32.091] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:33:32.099] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:33:32.300] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T13:33:32.301] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:33:48.754] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:33:48.754] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:33:49.059] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:35:05.124] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:35:05.133] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:35:05.393] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:35:11.788] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:35:11.789] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:35:11.982] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%m/%d')'' at line 1
+[2023-03-02T13:35:11.982] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:35:49.528] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:35:49.537] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:35:49.706] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:36:21.426] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:36:21.426] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:36:21.637] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:36:53.331] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:36:53.331] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:36:53.491] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:37:10.381] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T13:37:10.381] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T13:37:10.606] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T13:46:19.803] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-02T13:46:19.811] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-02T13:46:20.028] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-02T13:46:20.028] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-02T13:47:31.285] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-02T13:47:31.293] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-02T13:47:31.474] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-02T13:47:31.474] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-02T13:48:02.387] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-02T13:48:02.395] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-02T13:48:02.625] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:01:14.687] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:01:14.710] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:01:24.742] [FATAL] app - file: RequestService.js,error: Error: connect ETIMEDOUT
+[2023-03-02T15:01:24.743] [FATAL] app - file: RequestController.js,error: Error: connect ETIMEDOUT
+[2023-03-02T15:01:56.649] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:01:56.649] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:02:06.669] [FATAL] app - file: RequestService.js,error: Error: connect ETIMEDOUT
+[2023-03-02T15:02:06.670] [FATAL] app - file: RequestController.js,error: Error: connect ETIMEDOUT
+[2023-03-02T15:20:47.372] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:20:47.461] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:20:47.850] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:21:37.672] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:21:37.699] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:21:38.562] [FATAL] app - file: 'RequestRepo.js',error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2023-03-02T15:21:38.563] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:40:01.670] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:40:01.683] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:40:02.397] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:42:30.868] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:42:30.891] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:42:31.420] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:42:54.607] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:42:54.607] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:42:54.937] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:43:06.872] [INFO] app - file: RequestController.js getfilteredRequests is called
+[2023-03-02T15:43:06.872] [INFO] app - file: RequestService.js getfilteredRequest is called
+[2023-03-02T15:43:07.062] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-02T15:43:34.408] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-02T15:43:34.408] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-02T15:43:34.940] [INFO] app - file: RequestController.js , statuscode : 200

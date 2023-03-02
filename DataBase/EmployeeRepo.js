@@ -128,14 +128,7 @@ exports.empFilter = async (data) => {
 
         let count = 0;
         for (const key in request) {
-            if (key == "empid" && request[key].length > 0) {
-                let element = parseInt(request[key]);
-                if (element != '') {
-                    string = key + ' = ' + `${request[key]}`;
-                    count++;
-                }
-            }
-            else if (key == "empname" && request[key].length > 0) {
+            if (key == "empname" && request[key].length > 0) {
                 let element = request[key];
 
                 string = key + ' like ' + `'${request[key]}%'`;
