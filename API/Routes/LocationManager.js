@@ -6,11 +6,11 @@ router.get('/',getLocation);
 
 router.post('/add',addLocation);
 
-router.post('/getemployeebyId',getLocationById);
+router.post('/getlocationbyId',getLocationById);
 
-router.post('/deleteemployeebyId',deleteLocationById);
+router.post('/deletelocationbyId',deleteLocationById);
 
-router.post('/updateemp',EditLocationdetails);
+router.post('/updatelocation',EditLocationdetails);
 
 router.post('/locationfilter',locationFilter);
 

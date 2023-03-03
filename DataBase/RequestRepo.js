@@ -70,10 +70,11 @@ async function prepareCreateRequestQuery(data) {
 }
 
 exports.getAllRequests = async () => {
+    dbConnection = await DB.ConnectToDb();
     try {
         logger.info(`file: ${fname} getAllRequests is called`);
         let query = `select requestid,createdby, DATE_FORMAT(createddate,'%d/%m/%Y') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%d/%m/%Y') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%d/%m/%Y') AS backupdate, DATE_FORMAT(downtimenotifydate,'%d/%m/%Y') AS downtimenotifydate  from  requestdetails `;
-        dbConnection = await DB.ConnectToDb();
+       
         let result = await DB.ExecuteQuery(dbConnection, query);
         console.log(result, "result from table");
         return result;

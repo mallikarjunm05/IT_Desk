@@ -54,7 +54,7 @@ exports.getLocationById = async (data) => {
         let locationid = data.body.locationid;
         logger.info(`file: ${fname} getLocationById is called`);
         dbConnection = await DB.ConnectToDb();
-        let query = `select * from location where empid=${locationid}`;
+        let query = `select * from location where locationid=${locationid}`;
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }
