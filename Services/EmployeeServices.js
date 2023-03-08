@@ -78,3 +78,27 @@ exports.empFilter = async(data) => {
         logger.fatal(`file: ${fname},error: ${err}`); 
     }
 }
+
+exports.getEmployeeIdByDevice = async(data) => {
+    try {
+        logger.info(`file: ${fname} getEmployeeIdByDevice is called`);
+        let result = await EmployeeRepo.getEmployeeIdByDevice(data);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`); 
+    }
+}
+
+exports.getEmployeeNameById = async(data) => {
+    try {
+        logger.info(`file: ${fname} getEmployeeNameById is called`);
+        let result = await EmployeeRepo.getEmployeeNameById(data);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`); 
+    }
+}

@@ -30,7 +30,7 @@ app.disable('etag');
 
 app.use(passport.initialize());
 passport.use(bearerStrategy);
-app.use(isAuthenticated);
+//app.use(isAuthenticated);
 
 app.use('/ListDataMaster',ListDataMasterManager);
 app.use('/ListDataDetail',ListDataDetailManager);

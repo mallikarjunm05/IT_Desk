@@ -123,4 +123,41 @@ const empFilter = async(req,res) => {
     }
 }
 
-module.exports = { addEmployee, getEmployees ,getEmployeeById, deleteEmployeeById,EditEmployeedetails,empFilter};
+const getEmployeeIdByDevice = async(req,res) => {
+    try {
+        logger.info(`file: ${fname} getEmployeeIdByDevice is called`);
+        let result = await EmployeeServices.getEmployeeIdByDevice(req);
+        res.send({"Status": {
+            StatusCode: 200,
+            StatusType: "Success",
+            StatusMessage: "Records found",
+            StatusSeverity: "Information",
+           },
+            result});
+    }
+    catch(err){
+        logger.fatal(`file: ${fname},error: ${err}`); 
+        res.status(500).json({"status":{"statuscode":500,"statusType":"failure","error":err}});
+    }
+}
+
+
+const getEmployeeNameById = async(req,res) => {
+    try {
+        logger.info(`file: ${fname} getEmployeeNameById is called`);
+        let result = await EmployeeServices.getEmployeeNameById(req);
+        res.send({"Status": {
+            StatusCode: 200,
+            StatusType: "Success",
+            StatusMessage: "Records found",
+            StatusSeverity: "Information",
+           },
+            result});
+    }
+    catch(err){
+        logger.fatal(`file: ${fname},error: ${err}`); 
+        res.status(500).json({"status":{"statuscode":500,"statusType":"failure","error":err}});
+    }
+}
+
+module.exports = { addEmployee, getEmployees ,getEmployeeById, deleteEmployeeById,EditEmployeedetails,empFilter,getEmployeeIdByDevice,getEmployeeNameById};

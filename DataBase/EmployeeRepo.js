@@ -182,3 +182,39 @@ exports.empFilter = async (data) => {
         dbConnection.release();
     }
 }
+
+exports.getEmployeeIdByDevice = async (data) => {
+    try {
+        let device = data.body.device;
+        logger.info(`file: ${fname} getEmployeeIdByDevice is called`);
+        dbConnection = await DB.ConnectToDb();
+        let query = `select empid from empdetails where device='${device}'`;
+        let result = await DB.ExecuteQuery(dbConnection, query);
+        return result;
+    }
+    catch (err) {
+        console.log("error from getEmployeeById", err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+    }
+    finally {
+        dbConnection.release();
+    }
+}
+
+exports.getEmployeeNameById = async (data) => {
+    try {
+        let empid = data.body.empid;
+        logger.info(`file: ${fname} getEmployeeNameById is called`);
+        dbConnection = await DB.ConnectToDb();
+        let query = `select empname from empdetails where empid=${empid}`;
+        let result = await DB.ExecuteQuery(dbConnection, query);
+        return result;
+    }
+    catch (err) {
+        console.log("error from getEmployeeById", err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+    }
+    finally {
+        dbConnection.release();
+    }
+}
