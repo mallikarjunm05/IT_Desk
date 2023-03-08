@@ -4,6 +4,8 @@ const router= express.Router();
 const bodyparser=require('body-parser')
 var logger = require('morgan');
 const cors= require('cors')
+const passport = require("passport");
+const { bearerStrategy , isAuthenticated } = require('./authorize')
 
 const ListDataMasterManager = require('./API/Routes/ListDataMasterManager');
 const ListDataDetailManager = require('./API/Routes/ListDataDetailManager');
@@ -13,7 +15,6 @@ const RequestManager = require('./API/Routes/RequestManager');
 const RequestStatusManager = require('./API/Routes/RequestStatusManager');
 const ResultPerPageManager = require('./API/Routes/requestPagination');
 
-
 app.use(cors(
     origin="*"
   ))
@@ -22,11 +23,14 @@ extended:true,
 }))
 app.use(bodyparser.json())
 app.use(express.json())
-// app.use(cors('*'))
+app.use(cors('*'))
 
 app.use(logger('dev'));
 app.disable('etag');
 
+app.use(passport.initialize());
+passport.use(bearerStrategy);
+app.use(isAuthenticated);
 
 app.use('/ListDataMaster',ListDataMasterManager);
 app.use('/ListDataDetail',ListDataDetailManager);
@@ -35,9 +39,10 @@ app.use('/LocationManager',LocationManager);
 app.use('/RequestManager',RequestManager);
 app.use('/RequestStatusManager',RequestStatusManager);
 app.use('/RequestPaginationManager',ResultPerPageManager);
+
 app.listen(3000
     ,()=>{
     console.log("listening on 3000")
 })
 
-module.exports=router;
+module.exports = router;

@@ -29,7 +29,7 @@ exports.deleteDetailbyMasterId = async(data) => {
     try {
         logger.info(`file: ${fname} deleteMasterbyId is called`);
         const dbConnection = await DB.ConnectToDb();
-        const result = await MasterRepo.deleteMasterbyId(data,dbConnection);
+        const result = await DetailRepo.deleteMasterbyId(data,dbConnection);
         await dbConnection.release();
         return result;
     }
@@ -44,7 +44,7 @@ exports.deleteDetailbyDetailId = async(data) => {
     try {
         logger.info(`file: ${fname} deleteDetailbyDetailId is called`);
         const dbConnection = await DB.ConnectToDb();
-        const result = await MasterRepo.deleteDetailbyDetailId(data,dbConnection);
+        const result = await DetailRepo.deleteDetailbyDetailId(data,dbConnection);
         await dbConnection.release();
         return result;
     }
