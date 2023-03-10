@@ -73,10 +73,22 @@ exports.getAllRequests = async () => {
     dbConnection = await DB.ConnectToDb();
     try {
         logger.info(`file: ${fname} getAllRequests is called`);
-        let query = `select requestid,createdby, DATE_FORMAT(createddate,'%d/%m/%Y') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%d/%m/%Y') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%d/%m/%Y') AS backupdate, DATE_FORMAT(downtimenotifydate,'%d/%m/%Y') AS downtimenotifydate  from  requestdetails `;
+        let query = `select requestid,createdby, DATE_FORMAT(createddate,'%d/%m/%Y') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%d/%m/%Y') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%d/%m/%Y') AS backupdate, DATE_FORMAT(downtimenotifydate,'%d/%m/%Y') AS downtimenotifydate  from  requestdetails where createddate > current_date - interval '10' day`;
        
         let result = await DB.ExecuteQuery(dbConnection, query);
         console.log(result, "result from table");
+        if(result.length == 0){
+            let query = `select requestid,createdby, DATE_FORMAT(createddate,'%d/%m/%Y') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%d/%m/%Y') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%d/%m/%Y') AS backupdate, DATE_FORMAT(downtimenotifydate,'%d/%m/%Y') AS downtimenotifydate  from  requestdetails where createddate > current_date - interval '30' day`;
+       
+        result = await DB.ExecuteQuery(dbConnection, query);
+        if(result.length==0){
+            let query = `select requestid,createdby, DATE_FORMAT(createddate,'%d/%m/%Y') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%d/%m/%Y') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%d/%m/%Y') AS backupdate, DATE_FORMAT(downtimenotifydate,'%d/%m/%Y') AS downtimenotifydate  from  requestdetails where createddate > current_date - interval '90' day`;
+       
+        result = await DB.ExecuteQuery(dbConnection, query);
+        }
+        console.log(result, "result from table");
+        }
+        
         return result;
     }
     catch (err) {
@@ -273,7 +285,7 @@ exports.requestdetailsFilter = async (data) => {
                 count++;
 
             }
-            else if (key == "devicetyp" && request[key].length>0) {
+            else if (key == "devicetype" && request[key].length>0) {
 
                 string = key + ' = ' + `'${request[key]}'`;
                 count++;

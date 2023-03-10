@@ -72,7 +72,7 @@ exports.deleteLocationById = async (data) => {
         let locationid = data.body.locationid;
         logger.info(`file: ${fname} deleteLocationById is called`);
         dbConnection = await DB.ConnectToDb();
-        let query = `delete from location where empid=${locationid}`;
+        let query = `delete from location where locationid=${locationid}`;
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }
