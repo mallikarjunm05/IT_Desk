@@ -188,7 +188,7 @@ exports.getEmployeeIdByDevice = async (data) => {
         let device = data.body.device;
         logger.info(`file: ${fname} getEmployeeIdByDevice is called`);
         dbConnection = await DB.ConnectToDb();
-        let query = `select empid from empdetails where device='${device}'`;
+        let query = `select empid from empdetails where device='${device}' and emplevel='Manager'`;
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }
