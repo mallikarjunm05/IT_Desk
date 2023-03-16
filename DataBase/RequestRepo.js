@@ -94,7 +94,8 @@ async function  prepareCreateEmergencyRequestQuery(data) {
         data.empid = parseInt(data.empid);
         data.backup = parseInt(data.backup);
         data.downtime = parseInt(data.downtime);
-
+        data.verbalapprovaldate = await dateformat(data.verbalapprovaldate);
+        data.iesemailattached = await dateformat(data.iesemailattached);
         let createddate = await dateformat(data.createddate);
         let scheduleddate = await dateformat(data.scheduleddate);
 
@@ -283,6 +284,8 @@ async function updateEmergencyRequestQuery(data) {
         let backup = parseInt(data.backup);
         let downtime = parseInt(data.downtime);
 
+        data.verbalapprovaldate = await dateformat(data.verbalapprovaldate);
+        data.iesemailattached = await dateformat(data.iesemailattached);
         let createddate = await dateformat(data.createddate);
         console.log(createddate, "createddate formated", data.createddate, "data.createddate")
         let scheduleddate = await dateformat(data.scheduleddate);
@@ -331,7 +334,7 @@ exports.requestdetailsFilter = async (data) => {
         let filterobj = data.body;
         console.log(filterobj, "filterobj");
         let request = {};
-        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate  from  requestdetails where `;
+        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,DATE_FORMAT(verbalapprovaldate,'%Y-%m-%d') as verbalapprovaldate,isemailattached  from  requestdetails where `;
         let string = '';
         let nextdate;
         for (let key in filterobj) {
@@ -426,7 +429,7 @@ exports.getRequestbyId = async (data) => {
     try {
         let requestid = parseInt(data.requestid);
 
-        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason  from  requestdetails where requestid = ${requestid} ORDER BY requestid DESC`;
+        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason,  from  requestdetails where requestid = ${requestid} ORDER BY requestid DESC`;
         let result = await DB.ExecuteQuery(dbConnection, queryString);
         return result;
     } catch (error) {
