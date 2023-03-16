@@ -5,7 +5,7 @@ let transporter = nodemailer.createTransport({
     host: "smtp.office365.com", // hostname  "smtp.office365.com"  "smtp-mail.outlook.com"
     secureConnection: false, // TLS requires secureConnection to be false
     port: 587, // port for secure SMTP
-
+ 
     auth: {
         user: 'thummana.pavani@jktech.com',
         pass: 'pavani@1998'
@@ -28,21 +28,31 @@ exports.sendemail=async (data,emailid)=> {
                 body = template[key].html;
                 const format = (...args) => args.shift().replace(/%([jsd])/g, x => x === '%j' ? JSON.stringify(args.shift()) : args.shift())
 
-                if (key == "manager rejected" || "CAB manager rejected") {
-                    formattedbody = format(body, data.empdetail.empname, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
+                if (key == "Manager Rejected" ) {
+                    formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                     mailOptions = {
                         from: "Pavani  <thummana.pavani@jktech.com>",
-                        to: "thummana.pavani@jktech.com" || emailid,
+                        to:  emailid || "thummana.pavani@jktech.com",
+                        subject: `[CR-${data.requestid}] - Ticket Received `,
+                        html: formattedbody,
+                    }
+                }
+                else if( key == "CAB Rejected" || key == "Manager Approved"){
+                    formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
+
+                    mailOptions = {
+                        from: "Pavani  <thummana.pavani@jktech.com>",
+                        to:  "thummana.pavani@jktech.com",
                         subject: `[CR-${data.requestid}] - Ticket Received `,
                         html: formattedbody,
                     }
                 }
                 else{
-                    formattedbody = format(body,  data.empdetail.mgrname, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus);
+                    formattedbody = format(body,  data.empdetail.mgrname,data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus);
                     mailOptions = {
                         from: "Pavani  <thummana.pavani@jktech.com>",
-                        to: "thummana.pavani@jktech.com" || emailid,
+                        to:  emailid || "thummana.pavani@jktech.com",
                         subject: `[CR-${data.requestid}] - Ticket Received `,
                         html: formattedbody,
                     }
@@ -58,8 +68,10 @@ exports.sendemail=async (data,emailid)=> {
         transporter.sendMail(mailOptions, function (err, success) {
             if (err) {
                 console.log(err);
+                process.send("email not sent");
             } else {
                 console.log("Email sent successfully!");
+                process.send("email sent");
             }
         })
 

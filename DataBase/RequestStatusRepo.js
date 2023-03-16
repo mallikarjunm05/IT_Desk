@@ -10,9 +10,12 @@ let dbConnection;
 
 async function dateformat(date){
     
+   if(date){
     let d = new Date(date);
     let newdate = d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" +("0" + d.getDate()).slice(-2) ;
     return newdate;
+   }
+   else return "1999-01-01";
 }
 
 exports.getAllRequestStatus = async () => {

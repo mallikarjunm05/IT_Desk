@@ -111,7 +111,7 @@ exports.EditLocationdetails = async (data) => {
 exports.locationFilter = async (data) => {
     dbConnection = await DB.ConnectToDb();
     try {
-        let filterobj = data.body.filter
+        let filterobj = data.body
         let request = {};
         let queryString = ` select * from location where `;
         let string = '';
@@ -125,35 +125,35 @@ exports.locationFilter = async (data) => {
 
         let count = 0;
         for (const key in request) {
-            if (key == "locationid") {
+            if (key == "locationid" && request[key].length > 0) {
                 let element = request[key];
                 if (element != '') {
                     string = key + ' = ' + `${request[key]}`;
                     count++;
                 }
             }
-            else if (key == "locname") {
+            else if (key == "locname" && request[key].length > 0) {
                 let element = request[key];
                 if (element != '') {
                     string = key + ' like ' + `'${request[key]}%'`;
                     count++;
                 }
             }
-            else if (key == "state") {
+            else if (key == "state" && request[key].length > 0) {
                 let element = request[key];
                 if (element != '') {
                     string = key + ' like ' + `'${request[key]}%'`;
                     count++;
                 }
             }
-            else if (key == "country") {
+            else if (key == "country" && request[key].length > 0) {
                 let element = request[key];
                 if (element != '') {
                     string = key + ' like ' + `'${request[key]}%'`;
                     count++;
                 }
             }
-            else if (key == "zipcode") {
+            else if (key == "zipcode" && request[key].length > 0) {
                 let element = request[key];
                 if (element != '') {
                     string = key + ' = ' + `${request[key]}`;

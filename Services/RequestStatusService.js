@@ -17,10 +17,11 @@ exports.createRequestStatus = async(data) => {
         dbConnection = await DB.ConnectToDb();
         const result = await RequestRepo.createRequest(data,dbConnection);
         if (result.affectedRows == 1) {
-            const statusResult = await RequestStatusRepo.addrequestStatus(dbConnection,data,result.insertId);
-            if(statusResult.affectedRows == 1){
-                totalresult = {"result":result,"statusResult":statusResult};
-            }
+            // const statusResult = await RequestStatusRepo.addrequestStatus(dbConnection,data,result.insertId);
+            // if(statusResult.affectedRows == 1){
+            //     totalresult = {"result":result,"statusResult":statusResult};
+            // }
+            totalresult = {"result":result}
         }
         console.log(result, "from service file");
         return totalresult;

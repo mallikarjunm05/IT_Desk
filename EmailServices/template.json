@@ -1,23 +1,23 @@
 {
     
-    "new request":{
-        "html" : "<html><style>table, th, td { border:1px solid black;padding: 2px;}</style><body>Hi %s,<br><br>Given below ideas are awaiting your action.<br><br><table ><tr ><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th></tr><tr ><td><a href='http://localhost:4200/'>CR-%d</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
+    "New Request":{
+        "html" : "<html><style>table, th, td { border:1px solid black;padding: 5px;}</style><body>Hi %s,<br><br>Given below ideas are awaiting your action.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th></tr><tr ><td><a href='http://localhost:4200/request/%d'>CR-%d</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
     },
 
-    "manager rejected" :{
-        "html": "<html><style>table, th, td { border:1px solid black;padding: 2px;}</style><body>Hi %s,<br><br>Given below idea is rejected.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th><th>Reason</th></tr><tr ><td>CR-%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
+    "Manager Rejected" :{
+        "html": "<html><style>table, th, td { border:1px solid black;padding: 5px;}</style><body>Hi %s,<br><br>Given below idea is rejected.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th><th>Reason</th></tr><tr ><td><a href='http://localhost:4200/request/%d'>CR-%d</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
     },
 
-    "manager approved" :{
-        "html" : "<html><style>table, th, td { border:1px solid black;padding: 2px;}</style><body>Hi %s,<br><br>Given below ideas are awaiting your action.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th></tr><tr ><td>CR-%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
+    "Manager Approved" :{
+        "html" : "<html><style>table, th, td { border:1px solid black;padding: 5px;}</style><body>Hi %s,<br><br>Given below ideas are awaiting your action.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th></tr><tr ><td><a href='http://localhost:4200/request/%d'>CR-%d</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
     },
 
-    "CAB manager rejected":{
-        "html": "<html><style>table, th, td { border:1px solid black;padding: 2px;}</style><body>Hi %s,<br><br>Given below idea is rejected.<br><br><table ><tr ><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th><th>Reason</th></tr><tr ><td>CR-%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
+    "CAB  Rejected":{
+        "html": "<html><style>table, th, td { border:1px solid black;padding: 5px;}</style><body>Hi %s,<br><br>Given below idea is rejected.<br><br><table ><tr ><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th><th>Reason</th></tr><tr ><td><a href='http://localhost:4200/request/%d'>CR-%d</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
     },
 
-    "CAB manager approved":{
-        "html" : "<html><style>table, th, td { border:1px solid black; padding: 2px;}</style><body>Hi %s,<br><br>Given below ideas are approved.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th></tr><tr ><td>CR-%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
+    "CAB Approved":{
+        "html" : "<html><style>table, th, td { border:1px solid black; padding: 5px;}</style><body>Hi %s,<br><br>Given below ideas are approved.<br><br><table ><tr><th>Ticket</th><th>ChangeType</th><th>Priority</th><th>LocationName</th><th>ApproverName</th><th>Status</th></tr><tr ><td><a href='http://localhost:4200/request/%d'>CR-%d</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr></table><br><br>Thank you <br> IT Service Desk Team<br>itdesk@jktech.in<br>www.jktech.com  </body></html>"
     }
 
 }
