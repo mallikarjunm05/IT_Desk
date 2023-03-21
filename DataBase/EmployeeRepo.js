@@ -37,7 +37,17 @@ exports.addEmployeeDb = async (data) => {
         let mgrname = data.body.mgrname;
         logger.info(`file: ${fname} addEmployeeDb is called`);
         dbConnection = await DB.ConnectToDb();
-        let query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}','${mgremailid}',${mgrempid},'${mgrname}') `;
+        let query;
+        if(emplevel == "Manager" || "manager"){
+            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}'') `;
+        }
+        else if(emplevel == "CAB Manager" || "CAB manager"){
+            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
+        }
+        else{
+            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}','${mgremailid}',${mgrempid},'${mgrname}') `;
+        }
+        
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }
@@ -98,7 +108,14 @@ exports.EditEmployeedetails = async (data) => {
         let mgrname = data.body.mgrname;
         logger.info(`file: ${fname} EditEmployeedetails is called`);
         dbConnection = await DB.ConnectToDb();
-        let query = `update empdetails set empname= '${empname}',empemailid='${empemailid}',emplevel='${emplevel}',device='${device}',mgremailid='${mgremailid}',mgrempid=${mgrempid},mgrname='${mgrname}' where empid = ${empid}`;
+        let query;
+        if(emplevel == "Manager" || emplevel == "CAB Manager"){
+            query = `update empdetails set empname= '${empname}',empemailid='${empemailid}',emplevel='${emplevel}',device='${device}' where empid = ${empid}`;
+        }
+        else{
+            query = `update empdetails set empname= '${empname}',empemailid='${empemailid}',emplevel='${emplevel}',device='${device}',mgremailid='${mgremailid}',mgrempid=${mgrempid},mgrname='${mgrname}' where empid = ${empid}`;
+        }
+        
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }

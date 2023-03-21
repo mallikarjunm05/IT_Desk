@@ -86,3 +86,18 @@ exports.getRequestbyId = async(data) => {
         throw err; 
     }
 }
+
+
+
+exports.getrequestId = async(data) => {
+    try {
+        logger.info(`file: ${fname} getrequestyId is called`);
+        const result = await RequestRepo.getrequestId(data);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+}

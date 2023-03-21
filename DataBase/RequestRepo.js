@@ -28,6 +28,7 @@ exports.createRequest = async (data, dbConnection) => {
     try {
         logger.info(`file: ${fname} createRequest is called`);
         let result;
+        data.ticketNumber = parseInt(data.ticketNumber);
         console.log(data, "from api ");
         let query;
         if(data.type == "Normal"){
@@ -64,22 +65,22 @@ async function prepareCreateRequestQuery(data) {
             let downtimenotifydate = await dateformat(data.downtimenotifydate);
             let backupdate = await dateformat(data.backupdate);
             console.log(downtimenotifydate,backupdate, "downtime, backupdate");
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate,downtimenotifydate) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}','${downtimenotifydate}')`
+            const query = `INSERT INTO requestdetails (requestid,createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate,downtimenotifydate) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}','${downtimenotifydate}')`
             return query;
         }
         else if (data.backup == 1 && data.downtime == 0) {
             let backupdate = await dateformat(data.backupdate);
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}')`
+            const query = `INSERT INTO requestdetails (requestid, createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}')`
             return query;
         }
         else if (data.backup == 0 && data.downtime == 1) {
             let downtimenotifydate = await dateformat(data.downtimenotifydate);
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,downtimenotifydate) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${downtimenotifydate}')`
+            const query = `INSERT INTO requestdetails (requestid, createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,downtimenotifydate) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${downtimenotifydate}')`
             return query;
         }
         else {
            if(data.backup ==0 && data.downtime ==0){
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open')`
+            const query = `INSERT INTO requestdetails (requestid, createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open')`
             return query;
            }
         }
@@ -94,8 +95,8 @@ async function  prepareCreateEmergencyRequestQuery(data) {
         data.empid = parseInt(data.empid);
         data.backup = parseInt(data.backup);
         data.downtime = parseInt(data.downtime);
-        data.verbalapprovaldate = await dateformat(data.verbalapprovaldate);
-        data.iesemailattached = await dateformat(data.iesemailattached);
+        data.isemailattached = parseInt(data.isemailattached);
+
         let createddate = await dateformat(data.createddate);
         let scheduleddate = await dateformat(data.scheduleddate);
 
@@ -104,22 +105,22 @@ async function  prepareCreateEmergencyRequestQuery(data) {
             let downtimenotifydate = await dateformat(data.downtimenotifydate);
             let backupdate = await dateformat(data.backupdate);
             console.log(downtimenotifydate,backupdate, "downtime, backupdate");
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate,downtimenotifydate,,verbalapprovaldate,isemailattached) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}','${downtimenotifydate}','${data.verbalapprovaldate},${data.iesemailattached} )`
+            const query = `INSERT INTO requestdetails (requestid, createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate,downtimenotifydate,verbalapprovaldate,isemailattached) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}','${downtimenotifydate}','${data.verbalapprovaldate}',${data.isemailattached} )`
             return query;
         }
         else if (data.backup == 1 && data.downtime == 0) {
             let backupdate = await dateformat(data.backupdate);
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate,verbalapprovaldate,isemailattached ) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}','${data.verbalapprovaldate},${data.iesemailattached} )`
+            const query = `INSERT INTO requestdetails (requestid,createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,backupdate,verbalapprovaldate,isemailattached ) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${backupdate}','${data.verbalapprovaldate}',${data.isemailattached} )`
             return query;
         }
         else if (data.backup == 0 && data.downtime == 1) {
             let downtimenotifydate = await dateformat(data.downtimenotifydate);
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,downtimenotifydate,verbalapprovaldate,isemailattached) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${downtimenotifydate}','${data.verbalapprovaldate},${data.iesemailattached} )`
+            const query = `INSERT INTO requestdetails (requestid,createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,downtimenotifydate,verbalapprovaldate,isemailattached) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${downtimenotifydate}','${data.verbalapprovaldate}',${data.isemailattached} )`
             return query;
         }
         else {
            if(data.backup ==0 && data.downtime ==0){
-            const query = `INSERT INTO requestdetails (createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,verbalapprovaldate,isemailattached) VALUES ('${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${data.verbalapprovaldate},${data.iesemailattached} )`
+            const query = `INSERT INTO requestdetails (requestid, createdby, createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime, scheduleddate, reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,verbalapprovaldate,isemailattached) VALUES (${data.ticketNumber},'${data.createdby}', '${createddate}', '${data.smeemailid}', '${data.approveremail}', '${data.type}','${data.priority}','${data.devicetype}','${data.device}','${data.sitename}','${data.location}','${data.implemettime}','${scheduleddate}','${data.reqstatus}','${data.justification}','${data.cmrdesc}','${data.risk}','${data.actionplan}','${data.rollbackplan}','${data.relincident}',${data.backup},${data.downtime},${data.empid},'open','${data.verbalapprovaldate}',${data.isemailattached} )`
             return query;
            }
         }
@@ -135,7 +136,7 @@ exports.getAllRequests = async () => {
         let query = `select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason  from  requestdetails where createddate > current_date - interval '10' day  ORDER BY requestid DESC `;
 
         let result = await DB.ExecuteQuery(dbConnection, query);
-        console.log(result, "result from table");
+       // console.log(result, "result from table");
         if (result.length == 0) {
             let query = `select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason  from  requestdetails where createddate > current_date - interval '30' day ORDER BY requestid DESC `;
 
@@ -162,7 +163,7 @@ exports.getAllRequests = async () => {
 
 exports.updateRequest = async (data) => {
     try {
-
+        data.ticketNumber = parseInt(data.ticketNumber);
         dbConnection = await DB.ConnectToDb();
         console.log("data to update", data.reqstatus);
         logger.info(`file: ${fname} updateRequest is called`);
@@ -179,12 +180,22 @@ exports.updateRequest = async (data) => {
 
         }
         else if (data.reqstatus == "Manager Approved" || data.reqstatus == "CAB Approved") {
+            if( data.reqstatus == "CAB Approved" && data.status == "closed"){
+                const query = await updateApprovedStatusClosedRequestQuery(data);
+            result = await DB.ExecuteQuery(dbConnection, query);
+            }
             const query = await updateApprovedRequestQuery(data);
             result = await DB.ExecuteQuery(dbConnection, query);
         }
         else if (data.reqstatus == "Manager Rejected") {
+            if(data.status == 'closed'){
+                const query = await updateManagerRejectedstatusclosedQuery(data);
+                result = await DB.ExecuteQuery(dbConnection, query);
+            }
+           else{
             const query = await updateManagerRejectedQuery(data);
             result = await DB.ExecuteQuery(dbConnection, query);
+           }
         }
         else {
             if (data.reqstatus == "CAB Rejected") {
@@ -215,7 +226,17 @@ exports.updateRequest = async (data) => {
 
 async function updateApprovedRequestQuery(data) {
     try {
-        let query = `update  requestdetails set  reqstatus='${data.reqstatus}' where requestid= ${data.requestid}`
+        let query = `update  requestdetails set  reqstatus='${data.reqstatus}',rejreason="" where requestid= ${data.requestid}`
+        return query;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function updateApprovedStatusClosedRequestQuery(data) {
+    try {
+        let query = `update  requestdetails set  status='${data.status}' where requestid= ${data.requestid}`
         return query;
     } catch (error) {
         console.log(error);
@@ -283,9 +304,8 @@ async function updateEmergencyRequestQuery(data) {
     try {
         let backup = parseInt(data.backup);
         let downtime = parseInt(data.downtime);
+        data.isemailattached = parseInt(data.isemailattached);
 
-        data.verbalapprovaldate = await dateformat(data.verbalapprovaldate);
-        data.iesemailattached = await dateformat(data.iesemailattached);
         let createddate = await dateformat(data.createddate);
         console.log(createddate, "createddate formated", data.createddate, "data.createddate")
         let scheduleddate = await dateformat(data.scheduleddate);
@@ -293,22 +313,22 @@ async function updateEmergencyRequestQuery(data) {
         if (backup == 1 && downtime == 1) {
             let downtimenotifydate = await dateformat(data.downtimenotifydate);
             let backupdate = await dateformat(data.backupdate);
-            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}',implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid},backupdate='${backupdate}' ,downtimenotifydate='${downtimenotifydate}',verbalapprovaldate='${data.verbalapprovaldate},isemailattached=${data.iesemailattached} where requestid= ${data.requestid}`;
+            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}',implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid},backupdate='${backupdate}' ,downtimenotifydate='${downtimenotifydate}',verbalapprovaldate='${data.verbalapprovaldate}',isemailattached=${data.isemailattached} where requestid= ${data.requestid}`;
             return query;
         }
         else if (backup == 1 && downtime == 0) {
 
             let backupdate = await dateformat(data.backupdate);
-            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}',implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid} ,backupdate='${backupdate}',verbalapprovaldate='${data.verbalapprovaldate},isemailattached=${data.iesemailattached}  where requestid= ${data.requestid}`;
+            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}',implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid} ,backupdate='${backupdate}',verbalapprovaldate='${data.verbalapprovaldate}',isemailattached=${data.isemailattached}  where requestid= ${data.requestid}`;
             return query;
         }
         else if (backup == 0 && downtime == 1) {
             let downtimenotifydate = await dateformat(data.downtimenotifydate);
-            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}', implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid} ,downtimenotifydate='${downtimenotifydate}', verbalapprovaldate='${data.verbalapprovaldate},isemailattached=${data.iesemailattached}  where requestid= ${data.requestid}`;
+            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}', implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid} ,downtimenotifydate='${downtimenotifydate}', verbalapprovaldate='${data.verbalapprovaldate}',isemailattached=${data.isemailattached}  where requestid= ${data.requestid}`;
             return query;
         }
         else {
-            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}',implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid},verbalapprovaldate='${data.verbalapprovaldate},isemailattached=${data.iesemailattached}  where requestid= ${data.requestid}`;
+            let query = `update requestdetails set createdby = '${data.createdby}', createddate='${createddate}', smeemailid='${data.smeemailid}', approveremail='${data.approveremail}', type='${data.type}', priority='${data.priority}', devicetype='${data.devicetype}', device='${data.device}', sitename='${data.sitename}', location='${data.location}',implemettime='${data.implemettime}', scheduleddate='${scheduleddate}', reqstatus='${data.reqstatus}', justification='${data.justification}', cmrdesc='${data.cmrdesc}', risk='${data.risk}', actionplan='${data.actionplan}', rollbackplan='${data.rollbackplan}', relincident='${data.relincident}', backup=${backup}, downtime=${downtime},empid=${data.empid},verbalapprovaldate='${data.verbalapprovaldate}',isemailattached=${data.isemailattached}  where requestid= ${data.requestid}`;
             return query;
         }
     }
@@ -326,7 +346,15 @@ async function updateManagerRejectedQuery(data) {
         throw error;
     }
 }
-
+async function updateManagerRejectedstatusclosedQuery(data) {
+    try {
+        let query = `update requestdetails set  status = '${data.status}' where requestid= ${data.requestid}`
+        return query;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
 
 exports.requestdetailsFilter = async (data) => {
     dbConnection = await DB.ConnectToDb();
@@ -334,7 +362,7 @@ exports.requestdetailsFilter = async (data) => {
         let filterobj = data.body;
         console.log(filterobj, "filterobj");
         let request = {};
-        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,DATE_FORMAT(verbalapprovaldate,'%Y-%m-%d') as verbalapprovaldate,isemailattached  from  requestdetails where `;
+        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate  from  requestdetails where `;
         let string = '';
         let nextdate;
         for (let key in filterobj) {
@@ -429,8 +457,25 @@ exports.getRequestbyId = async (data) => {
     try {
         let requestid = parseInt(data.requestid);
 
-        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason,  from  requestdetails where requestid = ${requestid} ORDER BY requestid DESC`;
+        let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason,DATE_FORMAT(verbalapprovaldate,'%Y-%m-%d') AS  verbalapprovaldate,isemailattached  from  requestdetails where requestid = ${requestid} ORDER BY requestid DESC`;
         let result = await DB.ExecuteQuery(dbConnection, queryString);
+        return result;
+    } catch (error) {
+        console.log(error, "from get request by id");
+        throw error;
+    }
+    finally {
+        dbConnection.release();
+    }
+}
+
+exports.getrequestId = async () =>{
+    dbConnection = await DB.ConnectToDb();
+    try {
+
+        let queryString = ` insert into requestdetailid value(0)`;
+        let result = await DB.ExecuteQuery(dbConnection, queryString);
+        console.log(result,"ticket number from requestdetailid table")
         return result;
     } catch (error) {
         console.log(error, "from get request by id");

@@ -1,0 +1,139 @@
+[2023-03-20T11:26:42.905] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-20T11:26:42.916] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-20T11:26:42.978] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-20T11:26:43.099] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T11:26:43.099] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-20T11:26:43.100] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-20T11:26:43.251] [FATAL] app - file: RequestController.js,error: ReferenceError: listdtlcode is not defined
+[2023-03-20T11:27:05.990] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-20T11:27:05.999] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-20T11:27:06.069] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-20T11:27:06.201] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T11:27:06.202] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-20T11:27:06.203] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-20T11:43:35.647] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-20T11:43:35.655] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-20T11:43:35.875] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-20T11:43:35.997] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T11:43:35.997] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-20T11:43:35.998] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-20T11:45:34.111] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-20T11:45:34.120] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-20T11:45:34.177] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-20T11:45:34.287] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T11:45:34.287] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-20T11:45:34.287] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-20T11:59:37.724] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-20T11:59:37.737] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-20T11:59:37.888] [FATAL] app - file: RequestService.js,error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  requestdetails where requestid = 177 ORDER BY requestid DESC' at line 1
+[2023-03-20T11:59:37.889] [FATAL] app - file: RequestController.js,error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  requestdetails where requestid = 177 ORDER BY requestid DESC' at line 1
+[2023-03-20T12:00:38.583] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-20T12:00:38.596] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-20T12:00:38.621] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:00:38.627] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:00:38.632] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:00:38.638] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-20T12:00:38.638] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-20T12:00:38.850] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:00:38.878] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:00:38.900] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:00:38.995] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T12:00:42.508] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-20T12:00:42.508] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-20T12:00:42.681] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T12:00:58.559] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-20T12:00:58.560] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-20T12:00:58.630] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:00:58.641] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:00:58.645] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:00:58.664] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-20T12:00:58.664] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-20T12:00:58.702] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:00:58.737] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:00:58.739] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:00:58.837] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-20T12:00:58.837] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-20T12:01:03.428] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:01:03.430] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:01:03.433] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:01:03.501] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:01:03.502] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:01:03.554] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:01:05.738] [INFO] app - file: LocationController.js getLocation is called
+[2023-03-20T12:01:05.738] [INFO] app - file: LocationServices.js getLocation is called
+[2023-03-20T12:01:05.739] [INFO] app - file: LocationRepo.js getLocation is called
+[2023-03-20T12:01:05.754] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:01:05.759] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:01:05.820] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:01:05.827] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:45.184] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:45.191] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:45.194] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:45.198] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-20T12:11:45.198] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-20T12:11:45.247] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:45.257] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:45.317] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:45.383] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-20T12:11:45.383] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-20T12:11:47.383] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:47.388] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:47.390] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:47.437] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:47.443] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:47.505] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:53.341] [INFO] app - file: LocationController.js getLocation is called
+[2023-03-20T12:11:53.341] [INFO] app - file: LocationServices.js getLocation is called
+[2023-03-20T12:11:53.341] [INFO] app - file: LocationRepo.js getLocation is called
+[2023-03-20T12:11:53.357] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:53.359] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T12:11:53.431] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T12:11:53.498] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:04.854] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:04.864] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:04.868] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:04.871] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-20T13:06:04.871] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-20T13:06:04.921] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:05.059] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:05.060] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:05.229] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-20T13:06:05.229] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-20T13:06:06.848] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:06.853] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:06.856] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:06.923] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:06.924] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:06.983] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:08.993] [INFO] app - file: LocationController.js getLocation is called
+[2023-03-20T13:06:08.993] [INFO] app - file: LocationServices.js getLocation is called
+[2023-03-20T13:06:08.993] [INFO] app - file: LocationRepo.js getLocation is called
+[2023-03-20T13:06:08.997] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:09.000] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-20T13:06:09.090] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T13:06:09.091] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-20T15:19:29.767] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-20T15:19:29.785] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-20T15:19:29.867] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-20T15:19:30.058] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T15:19:30.060] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-20T15:19:30.061] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-20T15:20:00.768] [INFO] app - file: RequestController.js getrequestId is called
+[2023-03-20T15:20:00.768] [INFO] app - file: RequestService.js getrequestyId is called
+[2023-03-20T15:20:00.840] [FATAL] app - file: RequestService.js,error: ReferenceError: data is not defined
+[2023-03-20T15:20:00.841] [FATAL] app - file: RequestController.js,error: ReferenceError: data is not defined
+[2023-03-20T15:21:19.115] [INFO] app - file: RequestController.js getrequestId is called
+[2023-03-20T15:21:19.136] [INFO] app - file: RequestService.js getrequestyId is called
+[2023-03-20T15:21:19.323] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T15:21:45.729] [INFO] app - file: RequestController.js createRequest is called
+[2023-03-20T15:21:45.729] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-20T15:21:45.814] [INFO] app - file: RequestRepo.js createRequest is called
+[2023-03-20T15:21:45.960] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-20T15:21:45.961] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-20T15:21:45.961] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-20T16:30:25.512] [INFO] app - file: EmployeeController.js getEmployees is called
+[2023-03-20T16:30:25.533] [INFO] app - file: EmployeeServices.js getEmployess is called
+[2023-03-20T16:30:25.533] [INFO] app - file: EmployeeRepo.js getEmployeesRepo is called
+[2023-03-20T16:32:02.556] [INFO] app - file: EmployeeController.js getEmployees is called
+[2023-03-20T16:32:02.556] [INFO] app - file: EmployeeServices.js getEmployess is called
+[2023-03-20T16:32:02.556] [INFO] app - file: EmployeeRepo.js getEmployeesRepo is called
