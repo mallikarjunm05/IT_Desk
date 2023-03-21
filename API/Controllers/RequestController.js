@@ -117,7 +117,7 @@ const UpdateRequest = async (req, res) => {
             data.body.empid = req.body.empid;
             let empdetail = await empdetails.getEmployeeById(data);
             req.body.empdetail = empdetail[0];
-            req.body.requestid = req.body.ticketNumber;
+            req.body.requestid = req.body.requestid;
             console.log(req.body.empdetail.mgrname);
             //send email function
             ///    emailservice.sendemail(req.body,req.body.empdetail.mgremailid,listdtlcode);
@@ -135,7 +135,7 @@ const UpdateRequest = async (req, res) => {
             });
             //send email
             let data = {}
-            req.body.requestid = req.body.ticketNumber;
+            req.body.requestid = req.body.requestid;
             req.body.empdetail = await RequestServices.getRequestbyId(req.body);
             console.log(req.body.empdetail.createdby);
             let empdetail = await empdetails.getEmployeeById(data);
