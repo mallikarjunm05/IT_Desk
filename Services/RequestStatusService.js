@@ -57,10 +57,11 @@ exports.updateRequestStatus = async(data) => {
         const result = await RequestRepo.updateRequest(data,dbConnection);
         console.log(result,"from updateRequestStatus after uppdating request")
         if (result.affectedRows == 1) {
-            const statusResult = await RequestStatusRepo.addrequestStatus(dbConnection,data,data.requestid);
-            if(statusResult.affectedRows == 1){
-                totalresult = {"result":result,"statusResult":statusResult};
-            }
+            // const statusResult = await RequestStatusRepo.addrequestStatus(dbConnection,data,data.requestid);
+            // if(statusResult.affectedRows == 1){
+            //     totalresult = {"result":result,"statusResult":statusResult};
+            // }
+            totalresult = {"result":result}
         }
         console.log(result, "from service file");
         return totalresult;

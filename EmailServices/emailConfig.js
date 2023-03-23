@@ -15,7 +15,7 @@ exports.sendemail = async (data, emailid) => {
         
         var templatedata = fs.readFileSync(__dirname + '\\' + 'template.json');
         var template = JSON.parse(templatedata);
-        console.log(template ,"---");
+
         var body;
         var formattedbody;
         let mailOptions;
@@ -49,15 +49,13 @@ exports.sendemail = async (data, emailid) => {
                 auth: {
                     user: details[0],
                     pass: details[1]
-                    // user: 'Vishwas.v@jktech.com',
-                    // pass: 'Vishu@123',
+
                 }
             });
         }
         else {
-        connectionstring = '<endpoint=https://academycommunicationservice.communication.azure.com/;accesskey=l0U4Y55CbJwk9dmjl3gCXzJP1JL101ok5mbpSHE5GdWk03EMUAu8ObGQBElnp8g9B/q3KvrRwnghcgmfwGV2uw==>';
-        sender = '<DoNotReply@22bbbda0-b834-4959-b9bc-7b7d88aaad76.azurecomm.net>';
-            // sender = azureEmail.sendEmail();
+        connectionstring = details[0];
+        sender = details[1];
 
         }
 
@@ -76,8 +74,7 @@ exports.sendemail = async (data, emailid) => {
                         formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
-                            // from: "Pavani  <thummana.pavani@jktech.com>",
-                            to: emailid || "thummana.pavani@jktech.com",
+                            to: emailid ,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
@@ -86,8 +83,7 @@ exports.sendemail = async (data, emailid) => {
                         formattedbody = format(body, process.env.CABManager, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
-                            // from: "Pavani  <thummana.pavani@jktech.com>",
-                            to: process.env.CABMailId || "thummana.pavani@jktech.com",
+                            to: process.env.CABMailId ,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
@@ -95,8 +91,7 @@ exports.sendemail = async (data, emailid) => {
                     else {
                         formattedbody = format(body, data.empdetail.mgrname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus);
                         mailOptions = {
-                            // from: "Pavani  <thummana.pavani@jktech.com>",
-                            to: emailid || "thummana.pavani@jktech.com",
+                            to: emailid,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
@@ -118,7 +113,6 @@ exports.sendemail = async (data, emailid) => {
                     to: [
                         {
                             address:mailOptions.to,
-    
                         },
                     ],
                 },
@@ -129,13 +123,11 @@ exports.sendemail = async (data, emailid) => {
     
         }
         else {
-                // console.log("from google");
 
             for (let key in template) {
-                // console.log(key,"key");
 
                 if (key == data.reqstatus) {
-                    // console.log(data.reqstatus,"reqstatus ")
+
                     body = template[key].html;
                     const format = (...args) => args.shift().replace(/%([jsd])/g, x => x === '%j' ? JSON.stringify(args.shift()) : args.shift())
 
@@ -143,7 +135,6 @@ exports.sendemail = async (data, emailid) => {
                         formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
-                            from: "Pavani  <thummana.pavani@jktech.com>",
                             to: emailid || "thummana.pavani@jktech.com",
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
@@ -153,7 +144,6 @@ exports.sendemail = async (data, emailid) => {
                         formattedbody = format(body,process.env.CABManager, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
-                            from: "Pavani  <thummana.pavani@jktech.com>",
                             to: process.env.CABMailId || "thummana.pavani@jktech.com",
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
@@ -163,7 +153,6 @@ exports.sendemail = async (data, emailid) => {
                         console.log("google to new request ")
                         formattedbody = format(body, data.empdetail.mgrname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus);
                         mailOptions = {
-                            from: "Pavani  <thummana.pavani@jktech.com>",
                             to: emailid || "thummana.pavani@jktech.com",
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
