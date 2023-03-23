@@ -73,3 +73,18 @@ exports.deleteDetailbyDtlId = async(data,dbConnection) => {
         throw err;
     }
 }
+
+
+exports.getDescByListCode = async(data,dbConnection) => {
+    try {
+        logger.info(`file: ${fname} getDescByListCode is called`);
+        const result = DB.ExecuteQuery(dbConnection,`select listdtldesc from listdatadetail where listdtlcode='${data.listdtlcode}'`);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`); 
+        throw err;
+    }
+}
+

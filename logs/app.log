@@ -137,3 +137,504 @@
 [2023-03-20T16:32:02.556] [INFO] app - file: EmployeeController.js getEmployees is called
 [2023-03-20T16:32:02.556] [INFO] app - file: EmployeeServices.js getEmployess is called
 [2023-03-20T16:32:02.556] [INFO] app - file: EmployeeRepo.js getEmployeesRepo is called
+[2023-03-21T09:47:28.594] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T09:47:28.603] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T09:47:28.849] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-21T09:47:29.821] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T09:47:56.638] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T09:47:56.639] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T09:47:57.167] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T10:27:52.049] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T10:27:52.058] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T10:27:52.448] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T11:04:22.280] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-21T11:04:22.280] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-21T11:04:23.259] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-21T11:04:23.509] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-21T11:04:24.015] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T11:04:24.017] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T11:06:31.759] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-21T11:06:31.774] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-21T11:06:32.997] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-21T11:06:33.246] [INFO] app - file: RequestStatusRepo.js addrequestStatus is called
+[2023-03-21T11:06:33.490] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T11:06:33.495] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T11:09:02.040] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T11:09:02.040] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T11:09:02.091] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:09:02.100] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:09:02.102] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:09:02.105] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T11:09:02.105] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T11:09:02.338] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:09:02.817] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:09:03.060] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:09:03.304] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T11:10:36.123] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T11:10:36.123] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T11:10:36.194] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:10:36.198] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:10:36.202] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:10:36.208] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T11:10:36.208] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T11:10:36.348] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:10:36.492] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:10:36.494] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:10:36.757] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T11:10:36.757] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T11:10:37.163] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T11:10:37.163] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T11:10:37.205] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:10:37.209] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:10:37.213] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T11:10:37.216] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T11:10:37.216] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T11:10:37.460] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:10:37.461] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:10:37.462] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T11:10:37.944] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T11:20:12.583] [INFO] app - file: LocationController.js getLocation is called
+[2023-03-21T11:20:12.583] [INFO] app - file: LocationServices.js getLocation is called
+[2023-03-21T11:20:12.584] [INFO] app - file: LocationRepo.js getLocation is called
+[2023-03-21T11:58:53.437] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T11:58:53.438] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T11:58:53.746] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-21T11:58:54.715] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T15:03:46.548] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:03:46.549] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:03:46.599] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:03:46.604] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:03:46.614] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:03:46.625] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:03:46.626] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:03:46.860] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:03:46.860] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:03:46.924] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:03:47.025] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:03:47.025] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:04:22.266] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:04:22.266] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:04:22.321] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:04:22.324] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:04:22.326] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:04:22.327] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:04:22.327] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:04:22.399] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:04:22.403] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:04:22.422] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:04:22.523] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:04:22.523] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:04:30.006] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:04:30.006] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:06:36.976] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:06:36.981] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:06:36.985] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:06:36.988] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:06:36.988] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:06:37.062] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:06:37.062] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:06:37.124] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:06:37.423] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:06:37.424] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:07:16.966] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:07:16.966] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:07:17.014] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:07:17.027] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:07:17.027] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:07:17.028] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:07:17.030] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:07:17.108] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:07:17.109] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:07:17.109] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:07:17.190] [FATAL] app - file: RequestService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:07:17.191] [FATAL] app - file: RequestController.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+[2023-03-21T15:09:04.904] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:09:04.904] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:09:04.977] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:04.981] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:04.983] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:05.047] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:05.067] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:05.068] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:05.105] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:09:05.105] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:09:05.184] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-21T15:09:05.492] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T15:09:05.760] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:09:05.760] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:09:05.947] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:05.949] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:05.951] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:06.033] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:06.034] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:06.034] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:13.876] [INFO] app - file: LocationController.js getLocation is called
+[2023-03-21T15:09:13.876] [INFO] app - file: LocationServices.js getLocation is called
+[2023-03-21T15:09:13.877] [INFO] app - file: LocationRepo.js getLocation is called
+[2023-03-21T15:09:13.889] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:13.891] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:13.893] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:13.896] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:13.897] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:09:13.898] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:09:14.131] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:14.230] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:14.231] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:14.232] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:14.786] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T15:09:21.996] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:22.000] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:22.002] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:09:22.073] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:22.073] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:22.084] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:09:22.100] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:09:22.100] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:09:22.174] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-21T15:09:22.455] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T15:09:39.127] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:09:39.127] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:10:03.235] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:10:03.235] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:10:23.272] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:10:23.272] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:10:23.296] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:23.302] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:23.305] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:23.371] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:10:23.397] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:10:23.397] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:10:23.422] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:10:23.423] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:10:23.480] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-21T15:10:23.773] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T15:10:33.096] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:10:33.096] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:10:33.117] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:33.121] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:33.124] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:33.182] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:10:33.187] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:10:33.226] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:10:33.226] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:10:33.237] [INFO] app - file: ListDataDetailRepo.js getCodeByListMstId is called
+[2023-03-21T15:10:33.292] [INFO] app - file: RequestRepo.js getAllRequests is called
+[2023-03-21T15:10:33.505] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-21T15:10:54.533] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:10:54.534] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:10:54.570] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:54.575] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:10:54.577] [INFO] app - file: LocationController.js getLocation is called
+[2023-03-21T15:10:54.578] [INFO] app - file: LocationServices.js getLocation is called
+[2023-03-21T15:10:54.578] [INFO] app - file: LocationRepo.js getLocation is called
+[2023-03-21T15:10:54.581] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:10:54.581] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:10:54.583] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:11:12.825] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:12.825] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:11:12.834] [FATAL] app - file: RequestService.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:12.834] [FATAL] app - file: RequestController.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:12.842] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:12.844] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:12.852] [FATAL] app - file: LocationRepo.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:12.854] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNABORTED 10.210.10.51:3306
+[2023-03-21T15:11:30.703] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:11:30.704] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:11:33.636] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:33.637] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:11:47.427] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:11:47.427] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:11:47.796] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:11:47.796] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:11:47.847] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:11:47.849] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:11:47.850] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:11:47.947] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:11:47.947] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:11:49.942] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:49.943] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:50.162] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:50.162] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:11:50.210] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:50.212] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:50.228] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:50.323] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:11:50.323] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:01.965] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:12:01.965] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:12:02.015] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:02.018] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:02.021] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:02.108] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:12:02.108] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:12:04.408] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:04.409] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:04.442] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:04.442] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:12:04.444] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:04.463] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:04.463] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:27.829] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:12:27.829] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:12:27.885] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:27.891] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:27.894] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:12:27.894] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:12:27.902] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:28.089] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:12:28.089] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:12:30.393] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.393] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.403] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.413] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:30.417] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:30.435] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.435] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:12:30.437] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.443] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.453] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:30.457] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:12:30.457] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:12:30.462] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:12:30.462] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:12:30.547] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:30.547] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:12:30.559] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:32.313] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:33.092] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:12:33.092] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:12:33.105] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.106] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:12:33.107] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.109] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.121] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.131] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.131] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.140] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:33.194] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:33.198] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:33.203] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:12:33.206] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:12:33.206] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:12:35.018] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:35.665] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:35.666] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:12:35.668] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:35.671] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:35.679] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:35.680] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:12:35.688] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:01.382] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:13:01.382] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:13:01.445] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:13:01.448] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:13:01.461] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:13:01.467] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:13:01.467] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:13:02.195] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:13:02.195] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:13:02.248] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:13:02.252] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:13:02.258] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:13:02.264] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:13:02.264] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:13:04.143] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.144] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:13:04.148] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.149] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.155] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.155] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.162] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.777] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.785] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.785] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:13:04.787] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.802] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.803] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:13:04.813] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:00.707] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:14:00.707] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:14:00.779] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:00.782] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:00.786] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:00.795] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:14:00.795] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:14:01.333] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:14:01.333] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:14:03.337] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.345] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.345] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:14:03.347] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.356] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.356] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.364] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.982] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:03.982] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:15.249] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:14:15.249] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:14:15.320] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:15.322] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:15.326] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:15.329] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:14:15.329] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:14:18.077] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:18.101] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:18.101] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:14:18.103] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:18.121] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:18.121] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:18.128] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:48.264] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:14:48.264] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:14:48.357] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:14:48.357] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:14:48.361] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:48.365] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:14:48.365] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:14:48.367] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:48.369] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:51.136] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:51.137] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:14:51.139] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:51.149] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:51.150] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:14:51.153] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:51.156] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:51.167] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:51.167] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:14:51.186] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:51.192] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:51.196] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:51.208] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:51.210] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:51.212] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:54.007] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:54.009] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:54.016] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:14:54.016] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:14:54.018] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-21T15:14:54.018] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-21T15:14:54.019] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:54.021] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:54.023] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:54.025] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:54.030] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:54.036] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:54.040] [INFO] app - file: ListDataDetailController.js getCodeByMasterId is called
+[2023-03-21T15:14:54.047] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-21T15:14:54.047] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-21T15:14:56.881] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.884] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.899] [FATAL] app - file: EmployeeServices.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.899] [FATAL] app - file: EmployeeController.js,error: no result from employee repo
+[2023-03-21T15:14:56.902] [FATAL] app - file: ListDataDetailController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.910] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.910] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.923] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.923] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:56.931] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:14:56.932] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:14:59.366] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:59.366] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:14:59.381] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:14:59.382] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:15:01.826] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:15:01.826] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:15:01.841] [INFO] app - file: RequestController.js getAllRequests is called
+[2023-03-21T15:15:01.841] [INFO] app - file: RequestService.js getAllRequest is called
+[2023-03-21T15:15:04.207] [FATAL] app - file: RequestService.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-21T15:15:04.208] [FATAL] app - file: RequestController.js,error: Error: connect ECONNREFUSED 10.210.10.51:3306
+[2023-03-23T09:26:17.431] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:28:20.691] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:28:21.745] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:28:21.871] [FATAL] app - file: ListDataDetailService.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'Azureservice' in 'where clause'
+[2023-03-23T09:28:48.094] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:28:48.482] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:28:48.576] [FATAL] app - file: ListDataDetailService.js,error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Azureservice' at line 1
+[2023-03-23T09:28:52.049] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:28:52.799] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:29:40.092] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:29:44.432] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:29:45.246] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:29:49.892] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:29:51.284] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:30:04.885] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:30:08.041] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:30:12.665] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:30:12.981] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:30:18.565] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:30:22.066] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:30:22.675] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:30:30.594] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:30:31.711] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:31:09.775] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:31:10.207] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:31:15.013] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:31:15.434] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:31:20.079] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:31:20.461] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:31:25.944] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:31:26.585] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:32:01.589] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:32:01.985] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:32:10.159] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:32:13.194] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:32:54.636] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:33:01.373] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:33:04.766] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:33:07.548] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:33:27.538] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:33:28.424] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:35:08.942] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:35:09.917] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:35:16.318] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:35:16.598] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:35:25.727] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:35:26.021] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:35:47.990] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:35:49.182] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:35:53.890] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:35:54.254] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:37:42.850] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:37:43.564] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:37:46.543] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:37:46.939] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:37:51.897] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:37:52.259] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:38:12.071] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:38:13.358] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:38:18.850] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:38:23.884] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:38:24.385] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:38:33.231] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:38:33.710] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:39:17.318] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:39:20.068] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:39:20.484] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:39:28.447] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:39:29.135] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:39:38.048] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:39:38.579] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:39:43.619] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:39:43.981] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:40:07.692] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:40:07.990] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T09:40:14.986] [INFO] app - file: undefined deleteDetailbyDetailId is called
+[2023-03-23T09:40:15.728] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T10:24:35.531] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:24:36.068] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:24:54.982] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:25:44.327] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:25:44.686] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:26:02.132] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:26:02.511] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:26:07.629] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:26:07.995] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:26:12.529] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:26:12.925] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:26:16.624] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:26:16.907] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:26:46.623] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:26:46.906] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T10:27:00.370] [INFO] app - file: undefined getDescByMasterCode is called
+[2023-03-23T10:27:01.186] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called

@@ -48,3 +48,16 @@ exports.deleteMasterbyId = async(data,dbConnection) => {
     }
 }
 
+exports.getdescbyMasterCode = async(data,dbConnection) => {
+    try {
+        logger.info(`file: ${fname} getdescbyMasterCode is called`);
+        const result = DB.ExecuteQuery(dbConnection,`select listdesc from listdatamaster where  listcode ='${data.listcode}'`);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+}
+

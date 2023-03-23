@@ -164,7 +164,7 @@ const UpdateRequest = async (req, res) => {
             req.body.requestid = req.body.requestid;
             console.log(req.body.empdetail.mgrname);
             //send email function
-             ///    emailservice.sendemail(req.body,process.env.CABMailId,listdtlcode);
+                emailservice.sendemail(req.body,process.env.CABMailId,listdtlcode);
             //    emailservice.sendemail(req.body,process.env.CABMailId);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "CAB Approved") {

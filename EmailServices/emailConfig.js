@@ -1,17 +1,28 @@
 const nodemailer = require("nodemailer");
 const fs = require('fs');
 const { EmailClient } = require("@azure/communication-email");
-var connectionstring;
-var sender;
+const { getDescByListCode} = require('../Services/ListDataDetailService');
+const { getDescByMasterCode} = require('../Services/ListDataMasterServices');
+
+let connectionstring;
+let sender;
 
 let transporter;
+
+
 async function emailOptions(listdtlcode){
+
+    let data ={ listdtlcode : listdtlcode }
+    let result = await getDescByListCode(data);
+   
+    let details = result[0].listdtldesc.split(',');
+    console.log(details[0],"resulted desc ");
     if (listdtlcode == "Google") {
         transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'pavanivage@gmail.com',
-                pass: 'mjjsrfbednbvkodo',
+                user: details[0],
+                pass: details[1],
             },
         });
     }
@@ -21,30 +32,34 @@ async function emailOptions(listdtlcode){
             secureConnection: false, // TLS requires secureConnection to be false
             port: 587, // port for secure SMTP
             auth: {
-                // user: 'thummana.pavani@jktech.com',
-                // pass: 'pavani@1998'
-                user: 'Vishwas.v@jktech.com',
-                pass: 'Vishu@123',
+                user: details[0],
+                pass: details[1]
+                // user: 'Vishwas.v@jktech.com',
+                // pass: 'Vishu@123',
             }
         });
     }
     else {
-    connectionstring = '<endpoint=https://academycommunicationservice.communication.azure.com/;accesskey=l0U4Y55CbJwk9dmjl3gCXzJP1JL101ok5mbpSHE5GdWk03EMUAu8ObGQBElnp8g9B/q3KvrRwnghcgmfwGV2uw==>';
-    sender = '<DoNotReply@22bbbda0-b834-4959-b9bc-7b7d88aaad76.azurecomm.net>';
+    connectionstring = details[0];
+    sender = details[1];
         // sender = azureEmail.sendEmail();
     }
 }
 
-
 exports.sendemail = async (data, emailid,listdtlcode) => {
 
     try {
-
+        
         var templatedata = fs.readFileSync(__dirname + '\\' + 'template.json');
         var template = JSON.parse(templatedata);
         var body;
         var formattedbody;
         let mailOptions;
+
+        let data1 = { listcode :"USEMailService"}
+        let mastercode = await getDescByMasterCode(data1);
+        console.log(mastercode[0].listdesc,"listdesc");
+        let listdtlcode = mastercode[0].listdesc;
 
         emailOptions(listdtlcode);
         console.log(listdtlcode, "listdtalcode");

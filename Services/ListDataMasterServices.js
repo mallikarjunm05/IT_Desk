@@ -41,3 +41,19 @@ exports.deleteMasterbyId = async(data) => {
         throw err; 
     }
 }
+
+
+exports.getDescByMasterCode = async(data) => {
+    try {
+        logger.info(`file: ${fname} getDescByMasterCode is called`);
+        const dbConnection = await DB.ConnectToDb();
+        const result = await MasterRepo.getdescbyMasterCode(data,dbConnection);
+        await dbConnection.release();
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+}

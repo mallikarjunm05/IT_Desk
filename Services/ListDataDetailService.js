@@ -54,3 +54,18 @@ exports.deleteDetailbyDetailId = async(data) => {
         throw err; 
     }
 }
+
+exports.getDescByListCode = async(data) =>{
+    try {
+        logger.info(`file: ${fname} getDescByListCode  is called`);
+        const dbConnection = await DB.ConnectToDb();
+        const result = await DetailRepo.getDescByListCode(data,dbConnection);
+        await dbConnection.release();
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+        throw err; 
+    }
+}
