@@ -70,7 +70,7 @@ exports.sendemail = async (data, emailid) => {
                     body = template[key].html;
                     const format = (...args) => args.shift().replace(/%([jsd])/g, x => x === '%j' ? JSON.stringify(args.shift()) : args.shift())
 
-                    if (key == "Manager Rejected" || key =="CAB Approved") {
+                    if (key == "Manager Rejected" ) {
                         formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
@@ -78,6 +78,15 @@ exports.sendemail = async (data, emailid) => {
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
+                    }
+                    else if(key =="CAB Approved"){
+                            formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
+    
+                            mailOptions = {
+                                to: emailid ,
+                                subject: `[CR-${data.requestid}] - Ticket Received `,
+                                html: formattedbody,
+                            }
                     }
                     else if (key == "CAB Rejected" || key == "Manager Approved") {
                         formattedbody = format(body, process.env.CABManager, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);

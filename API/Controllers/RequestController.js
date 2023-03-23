@@ -3,6 +3,7 @@ const RequestServices = require('../../Services/RequestService');
 const RequestStatusService = require('../../Services/RequestStatusService');
 const emailservice = require('../../EmailServices/emailConfig');
 const empdetails = require('../../Services/EmployeeServices');
+const empRepo = require('../../DataBase/EmployeeRepo');
 var fname;
 
 fileNanme(__filename).then((data) => {
@@ -134,13 +135,16 @@ const UpdateRequest = async (req, res) => {
             });
             //send email
             let data = {}
-            req.body.requestid = req.body.requestid;
-            req.body.empdetail = await RequestServices.getRequestbyId(req.body);
-            console.log(req.body.empdetail.createdby);
-            let empdetail = await empdetails.getEmployeeById(data);
+            let ticketdetails = await RequestServices.getRequestbyId(req.body);
+            console.log(ticketdetails,"ticket details");
+            req.body.empid = ticketdetails[0].empid;
+            console.log(req.body,"empid body");
+            // console.log(ticketdetails[0].createdby,"created by");
+            let empdetail = await empRepo.getEmployeeById(req);
             req.body.empdetail = empdetail[0];
+            console.log(empdetail,"emp details");
             //send email function
-               emailservice.sendemail(req.body,req.body.empdetail.createdby);
+               emailservice.sendemail(req.body,ticketdetails[0].createdby);
             // emailservice.sendemail(req.body, req.body.empdetail.createdby);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "Manager Approved") {

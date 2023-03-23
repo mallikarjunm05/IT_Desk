@@ -1701,3 +1701,150 @@
 [2023-03-23T15:06:20.219] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
 [2023-03-23T15:06:20.414] [INFO] app - file: ListDataDetailService.js getDescByListCode  is called
 [2023-03-23T15:06:20.782] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T15:12:14.982] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T15:12:15.018] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T15:12:17.702] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T15:12:18.170] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T15:12:18.186] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T15:12:18.601] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-23T15:29:42.332] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T15:29:42.344] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T15:29:42.869] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T15:29:42.992] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T15:29:43.015] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T15:29:43.358] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-23T15:39:49.349] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T15:39:49.380] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T15:39:56.170] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T15:39:56.518] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T15:39:56.534] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T15:40:03.227] [INFO] app - file: ListDataMasterServices.js getDescByMasterCode is called
+[2023-03-23T15:40:03.945] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T15:40:04.451] [INFO] app - file: ListDataDetailService.js getDescByListCode  is called
+[2023-03-23T15:40:04.727] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T16:47:56.027] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T16:47:56.046] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T16:47:59.342] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T16:48:00.545] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T16:48:00.556] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T16:48:02.460] [FATAL] app - file: RequestController.js,error: TypeError: Cannot read properties of undefined (reading 'createdby')
+[2023-03-23T16:48:43.294] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T16:48:43.308] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T16:48:51.880] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T16:48:55.543] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T16:48:55.549] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T16:48:55.651] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T16:48:55.651] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T16:48:56.044] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T16:48:56.166] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T16:48:56.170] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T16:49:26.689] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T16:49:26.716] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T16:49:28.244] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T16:49:28.388] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T16:49:28.412] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T16:51:48.761] [INFO] app - file: RequestController.js getRequestbyId is called
+[2023-03-23T16:51:48.785] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T16:51:49.340] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T16:57:35.161] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T16:57:35.182] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T16:57:41.000] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T16:57:41.930] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T16:57:41.942] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T16:57:42.386] [INFO] app - file: EmployeeServices.js getEmployeeById is called
+[2023-03-23T17:00:17.221] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:00:17.265] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:00:19.817] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:00:20.571] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:00:20.599] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:00:22.599] [FATAL] app - file: RequestController.js,error: TypeError: Cannot set properties of undefined (setting 'empid')
+[2023-03-23T17:04:18.720] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:04:18.761] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:04:21.309] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:04:21.713] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:04:21.726] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:04:22.949] [FATAL] app - file: RequestController.js,error: TypeError: Cannot set properties of undefined (setting 'empid')
+[2023-03-23T17:16:03.135] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:16:03.176] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:16:06.011] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:16:07.686] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:16:07.702] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:16:09.813] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:16:09.814] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:16:10.046] [FATAL] app - file: RequestController.js,error: TypeError: Cannot set properties of undefined (setting 'empid')
+[2023-03-23T17:22:04.420] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:22:04.436] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:22:05.691] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:22:05.818] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:22:05.837] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:22:06.446] [FATAL] app - file: RequestController.js,error: TypeError: Cannot set properties of undefined (setting 'empid')
+[2023-03-23T17:31:27.261] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-23T17:31:27.279] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-23T17:31:54.724] [INFO] app - file: EmployeeController.js empFilter is called
+[2023-03-23T17:31:54.726] [INFO] app - file: EmployeeServices.js empFilter is called
+[2023-03-23T17:32:34.448] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:32:34.449] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:32:34.728] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:32:34.835] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:32:34.842] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:32:35.050] [FATAL] app - file: RequestController.js,error: TypeError: Cannot set properties of undefined (setting 'empid')
+[2023-03-23T17:35:36.937] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:35:36.951] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:35:37.234] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:35:37.349] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:35:37.366] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:35:37.808] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:35:37.959] [FATAL] app - file: EmployeeRepo.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2023-03-23T17:37:40.889] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:37:40.909] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:37:41.194] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:37:41.302] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:37:41.312] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:37:41.666] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:37:41.829] [FATAL] app - file: EmployeeRepo.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2023-03-23T17:39:16.704] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:39:16.723] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:39:16.991] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:39:17.090] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:39:17.101] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:39:17.269] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:39:17.461] [FATAL] app - file: EmployeeRepo.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2023-03-23T17:40:12.978] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:40:12.992] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:40:13.247] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:40:13.335] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:40:13.345] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:40:13.549] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:40:13.735] [FATAL] app - file: EmployeeRepo.js,error: Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2023-03-23T17:40:42.537] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:40:42.553] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:40:42.844] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:40:43.004] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:40:43.024] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:40:43.319] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:42:05.944] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:42:05.955] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:42:06.210] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:42:06.292] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:42:06.303] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:42:06.569] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:42:30.610] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:42:30.623] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:42:30.901] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:42:30.994] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:42:31.006] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:42:31.230] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:42:31.388] [INFO] app - file: ListDataMasterServices.js getDescByMasterCode is called
+[2023-03-23T17:42:31.464] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T17:42:31.545] [INFO] app - file: ListDataDetailService.js getDescByListCode  is called
+[2023-03-23T17:42:31.624] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called
+[2023-03-23T17:44:47.401] [INFO] app - file: RequestController.js updateRequest is called
+[2023-03-23T17:44:47.413] [INFO] app - file: RequestStatusService.js createRequeststatus is called
+[2023-03-23T17:44:47.658] [INFO] app - file: RequestRepo.js updateRequest is called
+[2023-03-23T17:44:47.753] [INFO] app - file: RequestController.js , statuscode : 200
+[2023-03-23T17:44:47.768] [INFO] app - file: RequestService.js getRequestbyId is called
+[2023-03-23T17:44:48.011] [INFO] app - file: EmployeeRepo.js getEmployeeById is called
+[2023-03-23T17:44:48.167] [INFO] app - file: ListDataMasterServices.js getDescByMasterCode is called
+[2023-03-23T17:44:48.240] [INFO] app - file: ListDataMasterRepo.js getdescbyMasterCode is called
+[2023-03-23T17:44:48.323] [INFO] app - file: ListDataDetailService.js getDescByListCode  is called
+[2023-03-23T17:44:48.400] [INFO] app - file: ListDataDetailRepo.js getDescByListCode is called

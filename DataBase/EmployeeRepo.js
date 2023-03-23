@@ -1,14 +1,10 @@
-
 const { fileNanme, logger } = require('../log4');
 const DB = require('./db')
-
 var fname;
 let dbConnection;
-
 fileNanme(__filename).then((data) => {
     fname = data;
 });
-
 exports.getEmployeesRepo = async () => {
     try {
         logger.info(`file: ${fname} getEmployeesRepo is called`);
@@ -24,7 +20,6 @@ exports.getEmployeesRepo = async () => {
         dbConnection.release();
     }
 }
-
 exports.addEmployeeDb = async (data) => {
     try {
         let empid = data.body.empid;
@@ -38,16 +33,15 @@ exports.addEmployeeDb = async (data) => {
         logger.info(`file: ${fname} addEmployeeDb is called`);
         dbConnection = await DB.ConnectToDb();
         let query;
-        if(emplevel == "Manager" || "manager"){
-            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}'') `;
+        if(emplevel ==  "Manager" || emplevel == "manager" ){
+            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
         }
-        else if(emplevel == "CAB Manager" || "CAB manager"){
+        else if(emplevel == "CAB Manager" || emplevel == "CAB manager"){
             query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
         }
         else{
             query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}','${mgremailid}',${mgrempid},'${mgrname}') `;
         }
-        
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }
@@ -59,7 +53,6 @@ exports.addEmployeeDb = async (data) => {
         dbConnection.release();
     }
 }
-
 exports.getEmployeeById = async (data) => {
     try {
         let empid = data.body.empid;
@@ -95,7 +88,6 @@ exports.deleteEmployeeById = async (data) => {
         dbConnection.release();
     }
 }
-
 exports.EditEmployeedetails = async (data) => {
     try {
         let empid = data.body.empid;
@@ -115,7 +107,6 @@ exports.EditEmployeedetails = async (data) => {
         else{
             query = `update empdetails set empname= '${empname}',empemailid='${empemailid}',emplevel='${emplevel}',device='${device}',mgremailid='${mgremailid}',mgrempid=${mgrempid},mgrname='${mgrname}' where empid = ${empid}`;
         }
-        
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }
@@ -127,7 +118,6 @@ exports.EditEmployeedetails = async (data) => {
         dbConnection.release();
     }
 }
-
 exports.empFilter = async (data) => {
     dbConnection = await DB.ConnectToDb();
     try {
@@ -135,46 +125,34 @@ exports.empFilter = async (data) => {
         let request = {};
         let queryString = ` select * from empdetails where `;
         let string = '';
-
         for (let key in filterobj) {
             if (filterobj != "" || 0) {
                 console.log(key, "key");
                 request[key] = filterobj[key];
             }
         }
-
         let count = 0;
         for (const key in request) {
             if (key == "empname" && request[key].length > 0) {
                 let element = request[key];
-
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
-
             }
             else if (key == "empemailid" && request[key].length > 0) {
-
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
-
             }
             else if (key == "emplevel" && request[key].length > 0) {
-
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
-
             }
             else if (key == "mgrname" && request[key].length > 0) {
-
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
-
             }
             else if (key == "mgrempid" && request[key].length > 0) {
-
                 string = key + ' = ' + `${request[key]}`;
                 count++;
-
             }
             else {   /** if there is no match*/
                 string = 'empid != 0';
@@ -186,7 +164,6 @@ exports.empFilter = async (data) => {
                 queryString = queryString + string + "  ";
             }
         }
-
         console.log("query is : \n ", queryString);
         let result = await DB.ExecuteQuery(dbConnection, queryString);
         return result;
@@ -199,7 +176,6 @@ exports.empFilter = async (data) => {
         dbConnection.release();
     }
 }
-
 exports.getEmployeeIdByDevice = async (data) => {
     try {
         let device = data.body.device;
@@ -217,7 +193,6 @@ exports.getEmployeeIdByDevice = async (data) => {
         dbConnection.release();
     }
 }
-
 exports.getEmployeeNameById = async (data) => {
     try {
         let empid = data.body.empid;
