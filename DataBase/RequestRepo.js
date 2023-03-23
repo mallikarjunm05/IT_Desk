@@ -129,8 +129,8 @@ async function  prepareCreateEmergencyRequestQuery(data) {
         throw err;
     }
 }
-exports.getAllRequests = async () => {
-    dbConnection = await DB.ConnectToDb();
+exports.getAllRequests = async (dbConnection) => {
+   
     try {
         logger.info(`file: ${fname} getAllRequests is called`);
         let query = `select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason  from  requestdetails where createddate > current_date - interval '10' day  ORDER BY requestid DESC `;
@@ -155,9 +155,6 @@ exports.getAllRequests = async () => {
         console.log(err, "getAllRequests");
         logger.fatal(`file: ${fname},error: ${err}`);
         throw err;
-    }
-    finally {
-        dbConnection.release();
     }
 }
 

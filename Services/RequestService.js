@@ -29,8 +29,11 @@ exports.createRequest = async(data) => {
 
 exports.getAllRequests = async() => {
     try {
+        dbConnection = await DB.ConnectToDb();
         logger.info(`file: ${fname} getAllRequest is called`);
-        const result = await RequestRepo.getAllRequests();
+        const result = await RequestRepo.getAllRequests(dbConnection);
+
+        await dbConnection.release();
         return result;
     }
     catch(err){

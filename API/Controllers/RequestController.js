@@ -4,7 +4,6 @@ const RequestStatusService = require('../../Services/RequestStatusService');
 const emailservice = require('../../EmailServices/emailConfig');
 const empdetails = require('../../Services/EmployeeServices');
 var fname;
-let listdtlcode = process.env.listdtlcode;
 
 fileNanme(__filename).then((data) => {
     fname = data;
@@ -40,7 +39,7 @@ const createRequest = async (req, res) => {
             console.log(req.body.empdetail.mgrname);
             //send email
 
-            //    emailservice.sendemail(req.body,req.body.empdetail.mgremailid,listdtlcode);
+                emailservice.sendemail(req.body,req.body.empdetail.mgremailid);
             //    child.on("message",async(msg)=>{
             //        result.emailservice = msg ;
             //   });
@@ -120,7 +119,7 @@ const UpdateRequest = async (req, res) => {
             req.body.requestid = req.body.requestid;
             console.log(req.body.empdetail.mgrname);
             //send email function
-            ///    emailservice.sendemail(req.body,req.body.empdetail.mgremailid,listdtlcode);
+           emailservice.sendemail(req.body,req.body.empdetail.mgremailid);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "Manager Rejected") {
             //send response
@@ -141,7 +140,7 @@ const UpdateRequest = async (req, res) => {
             let empdetail = await empdetails.getEmployeeById(data);
             req.body.empdetail = empdetail[0];
             //send email function
-            ///    emailservice.sendemail(req.body,req.body.empdetail.createdby,listdtlcode);
+               emailservice.sendemail(req.body,req.body.empdetail.createdby);
             // emailservice.sendemail(req.body, req.body.empdetail.createdby);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "Manager Approved") {
@@ -164,7 +163,7 @@ const UpdateRequest = async (req, res) => {
             req.body.requestid = req.body.requestid;
             console.log(req.body.empdetail.mgrname);
             //send email function
-                emailservice.sendemail(req.body,process.env.CABMailId,listdtlcode);
+                emailservice.sendemail(req.body,process.env.CABMailId);
             //    emailservice.sendemail(req.body,process.env.CABMailId);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "CAB Approved") {
@@ -184,7 +183,7 @@ const UpdateRequest = async (req, res) => {
             req.body.empdetail = await RequestServices.getRequestbyId(req.body);
             console.log(req.body.empdetail.createdby);
             //send email function
-            ///    emailservice.sendemail(req.body,process.env.CABMailId,listdtlcode);
+                emailservice.sendemail(req.body,process.env.CABMailId);
             //    emailservice.sendemail(req.body,req.body.empdetail.createdby);
         }
         else if( result.result.affectedRows == 1 && req.body.reqstatus == "CAB Rejected"){
@@ -203,7 +202,7 @@ const UpdateRequest = async (req, res) => {
             req.body.empdetail = await RequestServices.getRequestbyId(req.body);
             console.log(req.body.empdetail.createdby);
             //send email function
-            ////    emailservice.sendemail(req.body,process.env.CABMailId,listdtlcode);
+               emailservice.sendemail(req.body,process.env.CABMailId);
         }
         else {
             logger.info(`file: ${fname} , statuscode : 200`)
