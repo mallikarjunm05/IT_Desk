@@ -87,6 +87,7 @@ const getAllRequests = async (req, res) => {
 }
 const UpdateRequest = async (req, res) => {
     try {
+        console.log(req.server);
         logger.info(`file: ${fname} updateRequest is called`);
         result = await RequestStatusService.updateRequestStatus(req.body);
         console.log(result, "from Request controller");
@@ -160,15 +161,19 @@ const UpdateRequest = async (req, res) => {
             });
             //send email
             let data={body:{}}
-            data.body.empemailid = req.body.approveremail;
-            let empdetail = await empdetails.empFilter(data);
-            console.log(empdetail);
+            data.requestid = req.body.requestid;
+            let requestdetails = await RequestServices.getRequestbyId(data);
+            console.log(requestdetails[0].approveremail,"manager email id from request api");
+            data.body.empemailid =requestdetails[0].approveremail;
+           
+            let empdetail = await empRepo.getEmployeeByEmail(data);
+            console.log(empdetail,"empdetails");
+            req.body = {...requestdetails[0]};
             req.body.empdetail = empdetail[0];
-            req.body.requestid = req.body.requestid;
-            console.log(req.body.empdetail.mgrname);
+            console.log(req.body, "req.body");
+
             //send email function
                 emailservice.sendemail(req.body,process.env.CABMailId);
-            //    emailservice.sendemail(req.body,process.env.CABMailId);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "CAB Approved") {
             //send response

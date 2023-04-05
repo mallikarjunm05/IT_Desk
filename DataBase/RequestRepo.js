@@ -158,10 +158,10 @@ exports.getAllRequests = async (dbConnection) => {
     }
 }
 
-exports.updateRequest = async (data) => {
+exports.updateRequest = async (data,dbConnection) => {
     try {
         data.ticketNumber = parseInt(data.ticketNumber);
-        dbConnection = await DB.ConnectToDb();
+        // dbConnection = await DB.ConnectToDb();
         console.log("data to update", data.reqstatus);
         logger.info(`file: ${fname} updateRequest is called`);
         let result;
@@ -208,17 +208,19 @@ exports.updateRequest = async (data) => {
         }
 
         console.log(result, "result from table");
+        // dbConnection.release();
         return result;
-
+       
     }
     catch (error) {
         console.log(error, "from updateRequest");
         logger.fatal(`file: ${fname},error: ${error}`);
         throw error;
     }
-    finally {
-        dbConnection.release();
-    }
+    // finally {
+    //     dbConnection.release();
+    // }
+
 }
 
 async function updateApprovedRequestQuery(data) {

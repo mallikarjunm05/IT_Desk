@@ -34,13 +34,13 @@ exports.addEmployeeDb = async (data) => {
         dbConnection = await DB.ConnectToDb();
         let query;
         if(emplevel ==  "Manager" || emplevel == "manager" ){
-            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
+            query = `insert into empdetails(empid,empname,empemailid,emplevel,device) values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
         }
         else if(emplevel == "CAB Manager" || emplevel == "CAB manager"){
-            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
+            query = `insert into empdetails(empid,empname,empemailid,emplevel,device)  values(${empid},'${empname}','${empemailid}','${emplevel}','${device}') `;
         }
         else{
-            query = `insert into empdetails values(${empid},'${empname}','${empemailid}','${emplevel}','${device}','${mgremailid}',${mgrempid},'${mgrname}') `;
+            query = `insert into empdetails(empid,empname,empemailid,emplevel,device,mgremailid,mgrempid,mgrname) values(${empid},'${empname}','${empemailid}','${emplevel}','${device}','${mgremailid}',${mgrempid},'${mgrname}') `;
         }
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
@@ -209,4 +209,38 @@ exports.getEmployeeNameById = async (data) => {
     finally {
         dbConnection.release();
     }
+}
+exports.getEmployeeByEmail = async (data) => {
+    try {
+        let empemailid = data.body.empemailid;
+        logger.info(`file: ${fname} getEmployeeByEmail is called`);
+        dbConnection = await DB.ConnectToDb();
+        let query = `select * from empdetails where empemailid='${empemailid}'`;
+        let result = await DB.ExecuteQuery(dbConnection, query);
+        return result;
+    }
+    catch (err) {
+        console.log("error from getEmployeeByEmail", err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+    }
+    finally {
+        dbConnection.release();
+    }
+}
+
+exports.getEmployeeByLevel = async (data) => {
+    try {
+        let emplevel = data.body.emplevel;
+        logger.info(`file: ${fname} getEmployeeByLevel is called`);
+        dbConnection = await DB.ConnectToDb();
+        let query = `select * from empdetails where emplevel = '${emplevel}'`;
+        let result = await DB.ExecuteQuery(dbConnection, query);
+        dbConnection.release();
+        return result;
+    }
+    catch (err) {
+        console.log("error from getEmployeeByEmail", err);
+        logger.fatal(`file: ${fname},error: ${err}`);
+    }
+
 }

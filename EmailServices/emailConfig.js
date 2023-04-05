@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const { getDescByListCode} = require('../Services/ListDataDetailService');
 const { getDescByMasterCode} = require('../Services/ListDataMasterServices');
+const empdetail = require('../Services/EmployeeServices');
 const { EmailClient } = require("@azure/communication-email");
 let connectionstring;
 let sender;
@@ -89,10 +90,15 @@ exports.sendemail = async (data, emailid) => {
                             }
                     }
                     else if (key == "CAB Rejected" || key == "Manager Approved") {
-                        formattedbody = format(body, process.env.CABManager, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
-
+                        let datavalue = {
+                            body:{"emplevel": "CAB Manager"}
+                        }
+                        let emp= await empdetail.getEmployeeNameByLevel(datavalue);
+                        console.log(emp,"emp details of CAB Manager");
+                        formattedbody = format(body, emp[0].empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
+                        
                         mailOptions = {
-                            to: process.env.CABMailId ,
+                            to: emp[0].empemailid ,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }

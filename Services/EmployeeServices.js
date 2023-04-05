@@ -102,3 +102,15 @@ exports.getEmployeeNameById = async(data) => {
         logger.fatal(`file: ${fname},error: ${err}`); 
     }
 }
+
+exports.getEmployeeNameByLevel = async(data) => {
+    try {
+        logger.info(`file: ${fname} getEmployeeNameByLevel is called`);
+        let result = await EmployeeRepo.getEmployeeByLevel(data);
+        return result;
+    }
+    catch(err){
+        console.log(err);
+        logger.fatal(`file: ${fname},error: ${err}`); 
+    }
+}

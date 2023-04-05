@@ -160,4 +160,23 @@ const getEmployeeNameById = async(req,res) => {
     }
 }
 
-module.exports = { addEmployee, getEmployees ,getEmployeeById, deleteEmployeeById,EditEmployeedetails,empFilter,getEmployeeIdByDevice,getEmployeeNameById};
+const getEmployeeNameByLevel= async(req,res) => {
+    try {
+        logger.info(`file: ${fname} getEmployeeNameByLevel is called`);
+        let result = await EmployeeServices.getEmployeeNameByLevel(req);
+        res.send({"Status": {
+            StatusCode: 200,
+            StatusType: "Success",
+            StatusMessage: "Records found",
+            StatusSeverity: "Information",
+           },
+            result});
+    }
+    catch(err){
+        logger.fatal(`file: ${fname},error: ${err}`); 
+        res.status(500).json({"status":{"statuscode":500,"statusType":"failure","error":err}});
+    }
+}
+
+module.exports = { addEmployee, getEmployees ,getEmployeeById, deleteEmployeeById,EditEmployeedetails,
+    empFilter,getEmployeeIdByDevice,getEmployeeNameById,getEmployeeNameByLevel};
