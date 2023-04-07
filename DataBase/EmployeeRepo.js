@@ -198,7 +198,7 @@ exports.getEmployeeNameById = async (data) => {
         let empid = data.body.empid;
         logger.info(`file: ${fname} getEmployeeNameById is called`);
         dbConnection = await DB.ConnectToDb();
-        let query = `select empname from empdetails where empid=${empid}`;
+        let query = `select empname,empemailid from empdetails where empid=${empid}`;
         let result = await DB.ExecuteQuery(dbConnection, query);
         return result;
     }

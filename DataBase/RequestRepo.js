@@ -208,7 +208,7 @@ exports.updateRequest = async (data,dbConnection) => {
         }
 
         console.log(result, "result from table");
-        // dbConnection.release();
+        
         return result;
        
     }
@@ -217,9 +217,7 @@ exports.updateRequest = async (data,dbConnection) => {
         logger.fatal(`file: ${fname},error: ${error}`);
         throw error;
     }
-    // finally {
-    //     dbConnection.release();
-    // }
+    
 
 }
 
