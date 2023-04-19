@@ -176,7 +176,42 @@ const getEmployeeNameByLevel= async(req,res) => {
         logger.fatal(`file: ${fname},error: ${err}`); 
         res.status(500).json({"status":{"statuscode":500,"statusType":"failure","error":err}});
     }
+
 }
 
+const getUserExists= async(req,res) => {
+
+     try {
+    
+     logger.info(`file: ${fname} getUserExists is called`);
+    
+   let result = await EmployeeServices.getUserExists(req);
+    
+    res.send({"Status": {
+    
+   StatusCode: 200,
+    
+   StatusType: "Success",
+    
+   StatusMessage: "Records found",
+    
+    StatusSeverity: "Information",
+    
+   },
+    
+    result});
+    
+     }
+    
+    catch(err){
+    
+     logger.fatal(`file: ${fname},error: ${err}`);
+    
+    res.status(500).json({"status":{"statuscode":500,"statusType":"failure","error":err}});
+    
+  }
+    
+    }
+
 module.exports = { addEmployee, getEmployees ,getEmployeeById, deleteEmployeeById,EditEmployeedetails,
-    empFilter,getEmployeeIdByDevice,getEmployeeNameById,getEmployeeNameByLevel};
+    empFilter,getEmployeeIdByDevice,getEmployeeNameById,getEmployeeNameByLevel,getUserExists};

@@ -114,3 +114,25 @@ exports.getEmployeeNameByLevel = async(data) => {
         logger.fatal(`file: ${fname},error: ${err}`); 
     }
 }
+
+exports.getUserExists = async(data) => {
+
+     try {
+    
+    logger.info(`file: ${fname} getUserExists is called`);
+    
+    let result = await EmployeeRepo.isUserExists(data);
+    
+     return result;
+    
+    }
+    
+     catch(err){
+    
+     console.log(err);
+    
+    logger.fatal(`file: ${fname},error: ${err}`);
+    
+    }
+    
+    }

@@ -217,15 +217,16 @@ exports.getEmployeeByEmail = async (data) => {
         dbConnection = await DB.ConnectToDb();
         let query = `select * from empdetails where empemailid='${empemailid}'`;
         let result = await DB.ExecuteQuery(dbConnection, query);
+        dbConnection.release();
         return result;
     }
     catch (err) {
         console.log("error from getEmployeeByEmail", err);
         logger.fatal(`file: ${fname},error: ${err}`);
     }
-    finally {
-        dbConnection.release();
-    }
+    // finally {
+    //     dbConnection.release();
+    // }
 }
 
 exports.getEmployeeByLevel = async (data) => {
@@ -243,4 +244,37 @@ exports.getEmployeeByLevel = async (data) => {
         logger.fatal(`file: ${fname},error: ${err}`);
     }
 
+
 }
+
+exports.isUserExists = async (data) => {
+
+    try {
+    
+     let email = data.body.email;
+    
+     logger.info(`file: ${fname} gisUserExists is called`);
+    
+     dbConnection = await DB.ConnectToDb();
+    
+     let query = `select * from empdetails where empemailid = '${email}'`;
+    
+     let result = await DB.ExecuteQuery(dbConnection, query);
+    
+     dbConnection.release();
+    
+     console.log("result",result)
+    
+    return result;
+    
+    }
+    
+    catch (err) {
+    
+    console.log("error from isUserExists", err);
+    
+    logger.fatal(`file: ${fname},error: ${err}`);
+    
+   }
+    
+    }

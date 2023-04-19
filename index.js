@@ -34,7 +34,16 @@ app.disable('etag');
 app.use(passport.initialize());
 passport.use(bearerStrategy);
 // app.use(isAuthenticated);
-
+const clientconnection = (req,res,next)=>{
+  const client = {
+   host : req.hostname || req.host || req.headers['host'],
+   url : req.url,
+   referer : req.headers['referer'] || req.originalUrl
+  }
+  console.log(client)
+  next()
+}
+app.use(clientconnection)
 app.use('/ListDataMaster',ListDataMasterManager);
 app.use('/ListDataDetail',ListDataDetailManager);
 app.use('/EmpManager',EmployeeManager);
@@ -50,12 +59,18 @@ const options ={
 const sslserver =https.createServer(options,app);
 sslserver.disableKeepAlive = true;
 sslserver.keepAliveTimeout =120000;
+
 sslserver.listen(3000
     ,()=>{
     console.log("listening on 3000")
 })
 
 sslserver.keepAliveTimeout = 30000;
+app.listen(3000,'localhost', ()=>{
+  console.log("app listening on prt 3000!");
+})
+// var http = require('http'); 
 
+// http.createServer(app).listen(3000);
 
 module.exports = router;

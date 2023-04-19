@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const { addEmployee,getEmployees ,getEmployeeById,deleteEmployeeById,EditEmployeedetails,empFilter,
-    getEmployeeIdByDevice,getEmployeeNameById,getEmployeeNameByLevel} = require('../Controllers/EmployeeController');
+    getEmployeeIdByDevice,getEmployeeNameById,getEmployeeNameByLevel,getUserExists} = require('../Controllers/EmployeeController');
 
 router.get('/',getEmployees);
 
@@ -20,5 +20,7 @@ router.post('/getidbydevice',getEmployeeIdByDevice);
 router.post('/getnamebyid',getEmployeeNameById);
 
 router.post('/getnamebylevel',getEmployeeNameByLevel);
+
+router.post('/userExists',getUserExists);
 
 module.exports=router;
