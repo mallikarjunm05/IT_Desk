@@ -75,16 +75,21 @@ exports.sendemail = async (data, emailid) => {
                         formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
-                            to: emailid ,
+                            to: data.empdetail.emailid ,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
                     }
                     else if(key =="CAB Approved"){
-                            formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
+                        let datavalue = {
+                            body:{"emplevel": "CAB Manager"}
+                        }
+                        let emp= await empdetail.getEmployeeNameByLevel(datavalue);
+                        console.log(emp,"emp details of CAB Manager");
+                            formattedbody = format(body,  emp[0].empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
     
                             mailOptions = {
-                                to: emailid ,
+                                to: emp[0].empemailid ,
                                 subject: `[CR-${data.requestid}] - Ticket Received `,
                                 html: formattedbody,
                             }
@@ -106,7 +111,7 @@ exports.sendemail = async (data, emailid) => {
                     else {
                         formattedbody = format(body, data.empdetail.mgrname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus);
                         mailOptions = {
-                            to: emailid,
+                            to: data.empdetail.emailid,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
