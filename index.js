@@ -53,8 +53,8 @@ app.use('/RequestStatusManager',RequestStatusManager);
 app.use('/RequestPaginationManager',ResultPerPageManager);
 
 const options ={
-  key:fs.readFileSync(path.join(__dirname,'./cert/key.pem')),
-  cert:fs.readFileSync(path.join(__dirname,'./cert/cert.pem'))
+  key:fs.readFileSync(("C:\\Users\\jkserver\\Downloads\\jktech.key")),
+  cert:fs.readFileSync(("C:\\Users\\jkserver\\Downloads\\jktech.com\\db06354f6758b3ef.pem"))
 }
 const sslserver =https.createServer(options,app);
 sslserver.disableKeepAlive = true;
@@ -67,7 +67,7 @@ sslserver.listen(3000
 
 sslserver.keepAliveTimeout = 30000;
 app.listen(3000,'localhost', ()=>{
-  console.log("app listening on prt 3000!");
+  console.log("app listening on prt 3000");
 })
 // var http = require('http'); 
 

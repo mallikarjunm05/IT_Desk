@@ -75,7 +75,7 @@ exports.sendemail = async (data, emailid) => {
                         formattedbody = format(body, data.empdetail.empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
 
                         mailOptions = {
-                            to: data.empdetail.emailid ,
+                            to: data.empdetail.empemailid ,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
@@ -94,7 +94,7 @@ exports.sendemail = async (data, emailid) => {
                                 html: formattedbody,
                             }
                     }
-                    else if (key == "CAB Rejected" || key == "Manager Approved") {
+                    else if (key == "Manager Approved") {
                         let datavalue = {
                             body:{"emplevel": "CAB Manager"}
                         }
@@ -108,10 +108,25 @@ exports.sendemail = async (data, emailid) => {
                             html: formattedbody,
                         }
                     }
+                    else if (key == "CAB Rejected") {
+                        let dataval = {
+                            body:{"emplevel": "CAB Manager"}
+                        }
+                        let emp1= await empdetail.getEmployeeNameByLevel(dataval);
+                        console.log(emp1,"emp details of CAB Manager");
+                        formattedbody = format(body, emp1[0].empname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus, data.rejreason);
+                        console.log("email",data);
+
+                        mailOptions = {
+                            to: emp1[0].empemailid ,
+                            subject:`[CR-${data.requestid}] - Ticket Received`,
+                            html: formattedbody,
+                        }
+                    }
                     else {
                         formattedbody = format(body, data.empdetail.mgrname, data.requestid, data.requestid, data.type, data.priority, data.location, data.approveremail, data.reqstatus);
                         mailOptions = {
-                            to: data.empdetail.emailid,
+                            to: data.approveremail,
                             subject: `[CR-${data.requestid}] - Ticket Received `,
                             html: formattedbody,
                         }
@@ -122,7 +137,7 @@ exports.sendemail = async (data, emailid) => {
                 }
             }
 
-
+            console.log(mailOptions.subject,"subject of mail");
             const message = {
                 senderAddress: sender,
                 content: {

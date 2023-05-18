@@ -90,7 +90,7 @@ exports.deleteEmployeeById = async (data) => {
 }
 exports.EditEmployeedetails = async (data) => {
     try {
-        let empid = data.body.empid;
+        let empid = parseInt(data.body.empid);
         let empname = data.body.empname;
         let empemailid = data.body.empemailid
         let emplevel = data.body.emplevel;
@@ -133,24 +133,24 @@ exports.empFilter = async (data) => {
         }
         let count = 0;
         for (const key in request) {
-            if (key == "empname" && request[key].length > 0) {
+            if (key == "empname" && request[key]) {
                 let element = request[key];
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
             }
-            else if (key == "empemailid" && request[key].length > 0) {
+            else if (key == "empemailid" && request[key]) {
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
             }
-            else if (key == "emplevel" && request[key].length > 0) {
+            else if (key == "emplevel" && request[key]) {
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
             }
-            else if (key == "mgrname" && request[key].length > 0) {
+            else if (key == "mgrname" && request[key]) {
                 string = key + ' like ' + `'${request[key]}%'`;
                 count++;
             }
-            else if (key == "mgrempid" && request[key].length > 0) {
+            else if (key == "mgrempid" && request[key]) {
                 string = key + ' = ' + `${request[key]}`;
                 count++;
             }
@@ -166,15 +166,19 @@ exports.empFilter = async (data) => {
         }
         console.log("query is : \n ", queryString);
         let result = await DB.ExecuteQuery(dbConnection, queryString);
+        dbConnection.release();
+       
         return result;
+        
+
     }
     catch (err) {
         console.log(err, "error from empFilter");
         logger.fatal(`file: '${fname}',error: ${err}`);
     }
-    finally {
-        dbConnection.release();
-    }
+    // finally {
+    //     dbConnection.release();
+    // }
 }
 exports.getEmployeeIdByDevice = async (data) => {
     try {

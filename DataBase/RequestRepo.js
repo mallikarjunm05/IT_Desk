@@ -233,7 +233,8 @@ async function updateApprovedRequestQuery(data) {
 
 async function updateApprovedStatusClosedRequestQuery(data) {
     try {
-        let query = `update  requestdetails set  status='${data.status}' where requestid= ${data.requestid}`
+        console.log(data.closenote);
+        let query = `update  requestdetails set  status='${data.status}', closenote='${data.closenote}' where requestid= ${data.requestid}`
         return query;
     } catch (error) {
         console.log(error);
@@ -456,6 +457,7 @@ exports.getRequestbyId = async (data) => {
 
         let queryString = ` select requestid,createdby, DATE_FORMAT(createddate,'%Y-%m-%d') AS createddate, smeemailid, approveremail, type, priority, devicetype, device, sitename, location, implemettime,DATE_FORMAT(scheduleddate,'%Y-%m-%d') AS scheduleddate , reqstatus, justification, cmrdesc, risk, actionplan, rollbackplan, relincident, backup, downtime, empid , status,DATE_FORMAT(backupdate,'%Y-%m-%d') AS backupdate, DATE_FORMAT(downtimenotifydate,'%Y-%m-%d') AS downtimenotifydate,rejreason,DATE_FORMAT(verbalapprovaldate,'%Y-%m-%d') AS  verbalapprovaldate,isemailattached  from  requestdetails where requestid = ${requestid} ORDER BY requestid DESC`;
         let result = await DB.ExecuteQuery(dbConnection, queryString);
+        console.log(result,"from getrequestbyid function");
         return result;
     } catch (error) {
         console.log(error, "from get request by id");

@@ -135,17 +135,18 @@ const UpdateRequest = async (req, res) => {
                 }
             });
             //send email
-            let data = {}
-            let ticketdetails = await RequestServices.getRequestbyId(req.body);
-            console.log(ticketdetails,"ticket details");
-            req.body.empid = ticketdetails[0].empid;
+            let data={body:{}}
+            data.requestid = req.body.requestid;
+            let requestdetails = await RequestServices.getRequestbyId(data);
+            console.log(requestdetails,"ticket details");
+            req.body = {...requestdetails[0]}
             console.log(req.body,"empid body");
             // console.log(ticketdetails[0].createdby,"created by");
             let empdetail = await empRepo.getEmployeeById(req);
             req.body.empdetail = empdetail[0];
             console.log(empdetail,"emp details");
             //send email function
-               emailservice.sendemail(req.body,ticketdetails[0].createdby);
+               emailservice.sendemail(req.body,requestdetails[0].createdby);
             // emailservice.sendemail(req.body, req.body.empdetail.createdby);
         }
         else if (result.result.affectedRows == 1 && req.body.reqstatus == "Manager Approved") {
@@ -187,12 +188,14 @@ const UpdateRequest = async (req, res) => {
                 }
             });
             //send email
-            let data = {}
-            req.body.requestid = req.body.requestid;
-            req.body.empdetail = await RequestServices.getRequestbyId(req.body);
-            console.log(req.body.empdetail.createdby);
+            let data={body:{}}
+            data.requestid = req.body.requestid;
+            let requestdetails = await RequestServices.getRequestbyId(data);
+            req.body = {...requestdetails[0]};
+            console.log(req.body,"req.body from requsetcontroller ")
+
             //send email function
-                emailservice.sendemail(req.body,process.env.CABMailId);
+                emailservice.sendemail(req.body,req.body.createdby);
             //    emailservice.sendemail(req.body,req.body.empdetail.createdby);
         }
         else if( result.result.affectedRows == 1 && req.body.reqstatus == "CAB Rejected"){
@@ -206,12 +209,13 @@ const UpdateRequest = async (req, res) => {
                 }
             });
             //send email
-            let data = {}
-            req.body.requestid = req.body.requestid;
-            req.body.empdetail = await RequestServices.getRequestbyId(req.body);
-            console.log(req.body.empdetail.createdby);
+            let data={body:{}}
+            data.requestid = req.body.requestid;
+            let requestdetails = await RequestServices.getRequestbyId(data);
+            req.body = {...requestdetails[0]};
+            console.log(req.body,"req.body for cab rejected");
             //send email function
-               emailservice.sendemail(req.body,process.env.CABMailId);
+               emailservice.sendemail(req.body,req.body.createdby);
         }
         else {
             logger.info(`file: ${fname} , statuscode : 200`)
